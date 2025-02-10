@@ -210,7 +210,7 @@ with st.expander("Sales Performance"):
         yaxis_title="",
         coloraxis_colorbar=dict(title="Win Rate (%)")
     )
-    st.plotly_chart(fig_heatmap, use_container_width=True, key="win_rate_heatmap"))
+    st.plotly_chart(fig_heatmap, use_container_width=True, key="win_rate_heatmap")
 # --------------------------------------------------
 # Customer Acquisition & Retention: CAC, CLTV, churn rates
 # --------------------------------------------------
