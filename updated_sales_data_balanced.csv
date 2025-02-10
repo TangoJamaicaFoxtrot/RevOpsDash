@@ -1,0 +1,908 @@
+Opportunity_ID,Region,Segment,Opportunity_Type,Deal_Stage,Deal_Size (£)
+1,NA,Enterprise,New Customer,Negotiation,168970
+2,NA,Strategic,New Customer,Closed Lost,189702
+3,NA,Commercial,New Customer,Negotiation,32741
+4,NA,Enterprise,Expansion,Closed Lost,217355
+5,EMEA,Enterprise,Expansion,Closed Lost,143247
+6,NA,Enterprise,New Customer,Proposal Sent,216876
+7,APAC,SMB,New Customer,Negotiation,111112
+8,EMEA,Commercial,New Customer,Closed Won,144063
+9,APAC,SMB,New Customer,Closed Won,152211
+10,NA,Enterprise,Renewal,Closed Won,63481
+12,EMEA,Strategic,Expansion,Proposal Sent,206271
+13,NA,SMB,Expansion,Closed Lost,79569
+14,EMEA,Strategic,New Customer,Closed Won,27220
+15,NA,Enterprise,New Customer,Closed Won,161993
+16,NA,SMB,New Customer,Closed Lost,90275
+17,EMEA,SMB,Renewal,Closed Won,54607
+18,NA,Enterprise,New Customer,Closed Won,220694
+19,EMEA,Strategic,New Customer,Closed Lost,185197
+20,EMEA,Enterprise,Renewal,Negotiation,38862
+21,EMEA,SMB,Renewal,Closed Won,245338
+22,EMEA,Enterprise,New Customer,Negotiation,87811
+23,EMEA,Commercial,Renewal,Proposal Sent,154768
+24,APAC,Commercial,Renewal,Closed Won,159106
+25,APAC,SMB,Renewal,Closed Won,119955
+26,EMEA,Strategic,Renewal,Closed Won,183698
+27,EMEA,Enterprise,New Customer,Closed Lost,66766
+28,NA,Enterprise,New Customer,Proposal Sent,26924
+30,NA,Commercial,Renewal,Closed Won,187708
+31,APAC,Enterprise,New Customer,Closed Lost,128039
+32,EMEA,SMB,New Customer,Closed Won,167650
+33,APAC,SMB,Renewal,Closed Won,196347
+35,NA,SMB,Renewal,Closed Won,104735
+36,EMEA,Commercial,Expansion,Closed Lost,100297
+37,EMEA,Commercial,Expansion,Negotiation,190089
+38,EMEA,SMB,Renewal,Closed Won,163002
+39,NA,Enterprise,New Customer,Negotiation,226799
+40,APAC,Commercial,Expansion,Closed Won,94739
+41,EMEA,Commercial,New Customer,Closed Won,50727
+43,APAC,Commercial,Expansion,Closed Lost,24143
+44,NA,SMB,Renewal,Closed Won,73142
+45,EMEA,SMB,New Customer,Proposal Sent,163257
+46,APAC,Commercial,New Customer,Closed Lost,224232
+47,NA,SMB,New Customer,Closed Won,158478
+48,NA,Enterprise,Renewal,Closed Won,247479
+49,NA,SMB,New Customer,Closed Won,204876
+50,EMEA,Commercial,New Customer,Closed Lost,184019
+51,APAC,SMB,New Customer,Closed Won,84915
+52,NA,Enterprise,New Customer,Closed Won,211688
+53,NA,Enterprise,Expansion,Closed Won,119607
+54,EMEA,SMB,Expansion,Closed Won,43372
+55,EMEA,Strategic,Expansion,Closed Won,185626
+57,EMEA,Commercial,Expansion,Closed Lost,76865
+58,NA,SMB,New Customer,Closed Lost,125651
+59,EMEA,SMB,Expansion,Closed Won,48118
+60,EMEA,Enterprise,Expansion,Closed Won,157057
+61,NA,SMB,Renewal,Closed Won,151284
+63,NA,SMB,New Customer,Negotiation,23836
+65,NA,SMB,Expansion,Closed Won,49828
+66,APAC,Enterprise,Renewal,Closed Won,14709
+67,APAC,Enterprise,Expansion,Closed Won,27715
+68,APAC,Enterprise,Renewal,Closed Won,14173
+69,NA,Enterprise,New Customer,Proposal Sent,173941
+70,NA,Enterprise,New Customer,Closed Lost,69352
+71,APAC,Enterprise,Renewal,Proposal Sent,216919
+72,NA,SMB,New Customer,Closed Won,239914
+73,NA,SMB,Renewal,Closed Won,94210
+74,APAC,Enterprise,Renewal,Negotiation,16561
+75,APAC,Strategic,New Customer,Closed Won,56867
+77,EMEA,Enterprise,New Customer,Negotiation,149149
+78,APAC,SMB,Expansion,Closed Won,198653
+79,EMEA,SMB,Renewal,Closed Won,26889
+80,NA,Commercial,Renewal,Closed Won,164503
+83,APAC,Commercial,Renewal,Closed Won,153393
+84,EMEA,SMB,New Customer,Closed Lost,225632
+85,APAC,Commercial,Expansion,Closed Won,104861
+86,NA,SMB,Expansion,Closed Lost,79837
+87,EMEA,SMB,Expansion,Proposal Sent,219644
+89,APAC,SMB,New Customer,Negotiation,150703
+90,EMEA,Enterprise,New Customer,Proposal Sent,126054
+91,NA,SMB,Renewal,Closed Won,31051
+92,EMEA,Commercial,Expansion,Closed Won,113507
+93,APAC,Strategic,New Customer,Closed Lost,107018
+94,APAC,SMB,New Customer,Closed Won,56501
+95,NA,SMB,New Customer,Proposal Sent,179083
+97,NA,Enterprise,New Customer,Closed Lost,187498
+99,EMEA,Strategic,New Customer,Closed Lost,108258
+100,EMEA,SMB,Expansion,Closed Lost,45911
+101,NA,SMB,New Customer,Proposal Sent,167888
+103,APAC,Commercial,Renewal,Closed Won,36091
+104,NA,Enterprise,Expansion,Closed Lost,60893
+105,NA,Commercial,Renewal,Closed Won,235323
+106,EMEA,Commercial,New Customer,Negotiation,244328
+108,NA,SMB,Renewal,Closed Won,53387
+109,EMEA,SMB,Renewal,Closed Won,189461
+110,EMEA,SMB,Expansion,Negotiation,115276
+111,EMEA,Strategic,New Customer,Closed Won,167875
+112,EMEA,Commercial,New Customer,Closed Won,50105
+113,EMEA,Enterprise,Renewal,Closed Won,161100
+114,EMEA,Enterprise,New Customer,Closed Won,44496
+115,EMEA,Commercial,New Customer,Closed Won,14628
+116,EMEA,Enterprise,New Customer,Proposal Sent,244799
+117,NA,Commercial,Renewal,Proposal Sent,183421
+118,EMEA,SMB,New Customer,Closed Won,187466
+119,NA,Enterprise,Renewal,Closed Won,25743
+120,EMEA,Commercial,New Customer,Closed Won,204356
+123,EMEA,Strategic,Renewal,Proposal Sent,231906
+125,EMEA,Enterprise,Renewal,Closed Won,210325
+126,NA,SMB,Renewal,Negotiation,152632
+127,EMEA,Enterprise,Expansion,Closed Lost,117478
+128,APAC,Enterprise,New Customer,Closed Won,166386
+129,APAC,Enterprise,Expansion,Closed Won,171113
+130,EMEA,Commercial,Renewal,Negotiation,74437
+131,NA,Enterprise,New Customer,Closed Lost,108044
+132,NA,Commercial,Renewal,Proposal Sent,195165
+133,EMEA,SMB,New Customer,Closed Won,70933
+134,EMEA,Commercial,New Customer,Closed Lost,86617
+135,NA,Strategic,Expansion,Negotiation,182229
+136,NA,Strategic,Expansion,Closed Won,245149
+137,APAC,SMB,Expansion,Closed Lost,130085
+138,NA,Commercial,Renewal,Closed Won,126783
+139,NA,Strategic,Renewal,Proposal Sent,213821
+140,NA,Commercial,Renewal,Closed Won,181064
+141,NA,SMB,Renewal,Closed Won,177110
+142,EMEA,Commercial,Expansion,Closed Lost,207181
+143,EMEA,SMB,New Customer,Proposal Sent,14847
+144,EMEA,Commercial,Renewal,Closed Won,28637
+145,EMEA,Enterprise,Renewal,Closed Won,176794
+146,EMEA,Commercial,New Customer,Negotiation,155024
+147,NA,SMB,Expansion,Negotiation,237751
+148,EMEA,Enterprise,New Customer,Closed Lost,226328
+149,APAC,SMB,New Customer,Closed Won,10806
+150,EMEA,SMB,Expansion,Closed Won,31216
+151,EMEA,Enterprise,Renewal,Closed Won,235405
+152,NA,SMB,New Customer,Closed Lost,242556
+153,EMEA,Strategic,New Customer,Closed Won,134012
+154,NA,Commercial,New Customer,Negotiation,114341
+155,EMEA,SMB,New Customer,Closed Won,112502
+156,NA,SMB,Expansion,Closed Won,166595
+157,NA,Commercial,New Customer,Closed Lost,21053
+158,EMEA,Commercial,New Customer,Closed Won,172678
+159,NA,Commercial,New Customer,Negotiation,34477
+160,NA,Commercial,Renewal,Closed Won,104267
+161,APAC,Strategic,Renewal,Closed Won,150810
+162,EMEA,Enterprise,Expansion,Closed Lost,205123
+163,EMEA,Enterprise,Expansion,Closed Won,154740
+164,EMEA,Commercial,Expansion,Proposal Sent,233283
+165,NA,Commercial,Renewal,Closed Won,231137
+166,EMEA,Commercial,Renewal,Closed Won,166236
+167,NA,Enterprise,New Customer,Closed Lost,163633
+168,EMEA,Enterprise,New Customer,Closed Won,45744
+170,NA,Enterprise,New Customer,Closed Won,205180
+172,EMEA,SMB,Renewal,Closed Won,127539
+173,NA,SMB,Expansion,Closed Won,66087
+174,EMEA,Commercial,New Customer,Closed Won,97664
+175,EMEA,Strategic,New Customer,Closed Lost,167512
+176,NA,Commercial,Renewal,Closed Won,220718
+177,EMEA,SMB,New Customer,Closed Won,46315
+178,NA,Enterprise,New Customer,Closed Won,135057
+179,NA,SMB,Expansion,Negotiation,79297
+180,EMEA,Commercial,New Customer,Closed Lost,201868
+181,EMEA,Enterprise,New Customer,Closed Lost,126837
+182,EMEA,Enterprise,Renewal,Proposal Sent,249026
+183,NA,Enterprise,New Customer,Proposal Sent,148018
+184,EMEA,Strategic,Expansion,Closed Lost,209228
+185,EMEA,Commercial,New Customer,Negotiation,137116
+186,NA,Enterprise,Renewal,Closed Won,92326
+187,EMEA,Commercial,Expansion,Closed Won,218540
+188,NA,Enterprise,New Customer,Closed Won,100197
+189,NA,Strategic,Expansion,Closed Won,159075
+190,NA,Strategic,New Customer,Closed Won,124881
+191,APAC,SMB,New Customer,Closed Lost,71592
+192,EMEA,Enterprise,New Customer,Closed Won,234151
+193,NA,SMB,Renewal,Closed Won,193705
+194,NA,SMB,Renewal,Closed Won,227756
+196,NA,Enterprise,Expansion,Closed Won,110692
+197,NA,Enterprise,Expansion,Closed Lost,73129
+198,EMEA,SMB,Expansion,Closed Won,249715
+199,NA,SMB,Renewal,Negotiation,64012
+200,EMEA,Enterprise,Renewal,Closed Won,150259
+201,EMEA,Enterprise,New Customer,Closed Won,46343
+202,NA,SMB,Renewal,Closed Won,203724
+203,NA,Enterprise,Renewal,Closed Won,35127
+204,APAC,SMB,New Customer,Closed Lost,204521
+205,APAC,Enterprise,Expansion,Closed Lost,177226
+206,EMEA,Commercial,Renewal,Negotiation,22386
+207,NA,SMB,New Customer,Negotiation,124716
+208,NA,Enterprise,New Customer,Closed Lost,187425
+209,EMEA,Strategic,New Customer,Closed Won,218438
+210,EMEA,Commercial,Renewal,Closed Won,159451
+211,EMEA,Commercial,New Customer,Closed Won,81064
+212,NA,Commercial,Renewal,Closed Won,236070
+213,NA,Commercial,New Customer,Closed Lost,42130
+214,APAC,SMB,New Customer,Closed Won,146048
+216,EMEA,Enterprise,New Customer,Proposal Sent,116818
+217,EMEA,Commercial,New Customer,Closed Won,88111
+219,EMEA,Enterprise,New Customer,Closed Lost,198335
+220,NA,Enterprise,Expansion,Proposal Sent,133555
+222,NA,SMB,New Customer,Closed Lost,100804
+223,EMEA,SMB,New Customer,Closed Lost,96996
+224,EMEA,SMB,New Customer,Proposal Sent,163842
+225,EMEA,Enterprise,Expansion,Proposal Sent,247530
+226,NA,Commercial,New Customer,Closed Won,110442
+228,APAC,SMB,Renewal,Closed Won,243862
+229,APAC,Commercial,New Customer,Closed Won,249207
+231,NA,Strategic,New Customer,Closed Won,195414
+233,NA,SMB,New Customer,Closed Won,217000
+234,APAC,Commercial,New Customer,Closed Lost,231403
+235,NA,SMB,New Customer,Closed Lost,228098
+236,EMEA,SMB,Expansion,Closed Won,159935
+237,EMEA,Commercial,New Customer,Proposal Sent,70400
+238,NA,Commercial,Renewal,Closed Won,132629
+239,APAC,Commercial,Renewal,Closed Won,188218
+240,EMEA,Commercial,Renewal,Closed Won,21466
+241,EMEA,SMB,New Customer,Proposal Sent,179671
+242,NA,SMB,New Customer,Closed Lost,92050
+243,NA,SMB,New Customer,Closed Won,170987
+244,APAC,Enterprise,New Customer,Proposal Sent,68416
+245,APAC,SMB,Expansion,Proposal Sent,156562
+246,EMEA,Commercial,Renewal,Negotiation,28726
+248,NA,SMB,Expansion,Closed Won,105460
+250,EMEA,Enterprise,Expansion,Closed Lost,141054
+251,EMEA,Commercial,Expansion,Closed Won,126345
+252,NA,SMB,Expansion,Closed Won,164927
+253,APAC,Strategic,New Customer,Closed Lost,25873
+254,NA,Commercial,New Customer,Closed Lost,102551
+255,EMEA,Commercial,Renewal,Closed Won,141400
+257,NA,Strategic,Expansion,Closed Won,73815
+258,NA,Enterprise,Expansion,Closed Won,37366
+259,EMEA,SMB,Renewal,Closed Won,116605
+260,NA,Commercial,New Customer,Closed Lost,13833
+261,NA,SMB,Renewal,Closed Won,206341
+262,EMEA,Enterprise,Renewal,Closed Won,23050
+263,EMEA,Commercial,New Customer,Proposal Sent,168074
+264,EMEA,SMB,Renewal,Closed Won,12800
+265,NA,Commercial,New Customer,Closed Lost,141798
+266,EMEA,Enterprise,New Customer,Closed Won,155706
+267,NA,Enterprise,New Customer,Negotiation,203716
+268,EMEA,Enterprise,New Customer,Closed Lost,47415
+269,NA,Commercial,New Customer,Closed Won,39031
+270,APAC,Enterprise,New Customer,Closed Won,121456
+271,NA,Strategic,New Customer,Closed Lost,87255
+273,NA,SMB,Expansion,Closed Won,34560
+275,NA,Commercial,New Customer,Negotiation,199776
+277,NA,Enterprise,New Customer,Closed Won,17570
+278,APAC,SMB,New Customer,Closed Won,115451
+280,APAC,Enterprise,Expansion,Proposal Sent,243435
+282,EMEA,SMB,Renewal,Closed Won,133315
+283,EMEA,Commercial,New Customer,Closed Lost,57183
+284,EMEA,SMB,New Customer,Closed Lost,213738
+285,EMEA,Enterprise,New Customer,Proposal Sent,79541
+286,EMEA,SMB,Renewal,Closed Won,45480
+287,NA,SMB,New Customer,Closed Lost,14154
+288,NA,SMB,Expansion,Negotiation,119696
+289,NA,Commercial,New Customer,Closed Won,204647
+290,NA,SMB,New Customer,Proposal Sent,54764
+291,EMEA,Enterprise,Expansion,Closed Won,207865
+292,EMEA,Commercial,Renewal,Proposal Sent,211816
+293,NA,SMB,New Customer,Closed Lost,142815
+294,NA,SMB,Expansion,Closed Lost,11120
+295,APAC,Commercial,Renewal,Closed Won,107503
+296,NA,Commercial,Renewal,Negotiation,62080
+297,EMEA,Enterprise,Expansion,Closed Won,58392
+298,NA,SMB,New Customer,Closed Won,75521
+299,NA,Commercial,New Customer,Closed Lost,84085
+300,APAC,Commercial,Renewal,Closed Won,235877
+301,EMEA,Enterprise,Expansion,Closed Lost,183338
+302,EMEA,Enterprise,Expansion,Closed Won,54206
+303,NA,Commercial,Renewal,Closed Won,240224
+304,NA,Commercial,Expansion,Closed Won,196468
+305,NA,Commercial,New Customer,Closed Lost,190780
+306,EMEA,Enterprise,New Customer,Closed Won,71748
+307,APAC,SMB,New Customer,Negotiation,235115
+309,EMEA,SMB,Renewal,Closed Won,224242
+311,EMEA,Commercial,New Customer,Closed Won,171154
+312,NA,Commercial,Renewal,Negotiation,78811
+313,EMEA,Enterprise,New Customer,Closed Won,97107
+314,NA,Enterprise,Renewal,Proposal Sent,19498
+317,APAC,Enterprise,New Customer,Closed Lost,83284
+318,NA,SMB,New Customer,Closed Won,219383
+319,NA,SMB,Expansion,Closed Lost,69865
+320,EMEA,SMB,Expansion,Closed Won,206456
+321,APAC,SMB,New Customer,Closed Won,127828
+322,APAC,SMB,New Customer,Negotiation,100421
+324,APAC,Strategic,New Customer,Closed Won,69415
+326,EMEA,Commercial,Expansion,Proposal Sent,127480
+327,EMEA,Enterprise,Renewal,Closed Won,241279
+328,NA,Enterprise,Expansion,Negotiation,29300
+329,APAC,Commercial,Renewal,Proposal Sent,126944
+330,APAC,Enterprise,Renewal,Negotiation,102007
+331,APAC,SMB,New Customer,Closed Won,188595
+332,APAC,Enterprise,Expansion,Negotiation,82817
+333,EMEA,Commercial,Expansion,Closed Won,90888
+334,NA,Enterprise,New Customer,Closed Lost,22470
+335,NA,Commercial,New Customer,Closed Lost,173186
+336,NA,Enterprise,New Customer,Closed Won,157711
+337,EMEA,Strategic,New Customer,Closed Won,196873
+338,NA,Enterprise,Renewal,Closed Won,183931
+339,NA,Enterprise,New Customer,Closed Lost,76810
+340,NA,SMB,New Customer,Closed Won,165290
+342,NA,SMB,New Customer,Closed Won,162438
+343,NA,SMB,Renewal,Closed Won,100804
+344,NA,Enterprise,New Customer,Closed Won,181637
+346,EMEA,Strategic,Renewal,Closed Won,76519
+347,NA,Commercial,Expansion,Closed Lost,14509
+348,NA,SMB,Renewal,Closed Won,69072
+349,NA,SMB,New Customer,Closed Won,226697
+350,EMEA,Commercial,Renewal,Closed Won,19188
+351,APAC,Strategic,New Customer,Negotiation,10449
+352,NA,Commercial,Expansion,Closed Won,176097
+354,NA,Enterprise,Renewal,Negotiation,50013
+355,EMEA,SMB,Renewal,Closed Won,147805
+356,NA,SMB,Renewal,Proposal Sent,181568
+357,EMEA,SMB,Expansion,Closed Won,156839
+359,EMEA,Enterprise,Renewal,Closed Won,165359
+360,EMEA,SMB,New Customer,Negotiation,110938
+361,EMEA,Enterprise,Expansion,Closed Won,60970
+362,EMEA,Enterprise,Renewal,Proposal Sent,211820
+363,NA,Commercial,Renewal,Closed Won,106776
+365,EMEA,Enterprise,New Customer,Closed Lost,139507
+366,APAC,SMB,Renewal,Closed Won,54835
+367,NA,Commercial,Renewal,Closed Won,137768
+369,NA,Enterprise,Expansion,Closed Won,151970
+370,EMEA,Enterprise,New Customer,Closed Lost,150559
+371,EMEA,Commercial,New Customer,Closed Won,207423
+372,APAC,Commercial,New Customer,Proposal Sent,232850
+373,NA,Commercial,Expansion,Closed Lost,143203
+374,EMEA,Enterprise,New Customer,Closed Won,168993
+375,APAC,Strategic,Expansion,Negotiation,80970
+376,APAC,Commercial,New Customer,Negotiation,102546
+378,NA,Enterprise,New Customer,Closed Lost,155341
+379,EMEA,SMB,Renewal,Closed Won,109768
+380,NA,Commercial,Renewal,Closed Won,42863
+381,APAC,SMB,New Customer,Proposal Sent,46634
+383,NA,Commercial,New Customer,Negotiation,30088
+384,APAC,SMB,New Customer,Proposal Sent,22027
+385,NA,Commercial,New Customer,Closed Lost,170787
+386,EMEA,Strategic,New Customer,Proposal Sent,71947
+387,APAC,Enterprise,New Customer,Closed Won,59309
+388,APAC,Enterprise,Renewal,Proposal Sent,244450
+389,NA,Enterprise,New Customer,Closed Won,147666
+390,NA,Strategic,New Customer,Closed Won,246633
+391,EMEA,Commercial,Renewal,Proposal Sent,57332
+392,EMEA,SMB,New Customer,Closed Lost,60859
+393,EMEA,SMB,Expansion,Closed Lost,148380
+395,EMEA,Commercial,Renewal,Proposal Sent,217808
+396,NA,Enterprise,New Customer,Closed Lost,141851
+397,NA,Enterprise,Renewal,Closed Won,191156
+398,EMEA,Strategic,New Customer,Closed Lost,234881
+400,EMEA,Enterprise,New Customer,Closed Won,222176
+401,EMEA,Commercial,New Customer,Closed Lost,75432
+402,EMEA,Enterprise,New Customer,Closed Won,21745
+403,NA,Enterprise,New Customer,Closed Won,244151
+404,EMEA,Commercial,Expansion,Closed Won,42276
+405,EMEA,SMB,New Customer,Proposal Sent,16372
+406,EMEA,SMB,Expansion,Closed Won,194721
+407,NA,Commercial,New Customer,Closed Won,13045
+409,APAC,Commercial,Renewal,Closed Won,86856
+410,NA,Enterprise,Renewal,Closed Won,209379
+412,EMEA,SMB,Renewal,Closed Won,85147
+413,EMEA,Strategic,New Customer,Proposal Sent,107706
+414,EMEA,Enterprise,Expansion,Closed Won,226311
+415,APAC,SMB,Expansion,Closed Won,72349
+416,APAC,SMB,Renewal,Proposal Sent,185918
+417,NA,SMB,Renewal,Closed Won,157604
+419,EMEA,Commercial,New Customer,Closed Won,88539
+420,EMEA,Enterprise,Renewal,Closed Won,47333
+421,EMEA,SMB,Expansion,Negotiation,48107
+422,NA,Commercial,New Customer,Negotiation,219707
+423,EMEA,Enterprise,New Customer,Closed Won,37411
+424,NA,Commercial,Expansion,Closed Lost,243615
+425,EMEA,Enterprise,New Customer,Closed Won,157617
+427,EMEA,SMB,New Customer,Closed Won,109619
+428,APAC,Commercial,New Customer,Closed Won,124395
+430,EMEA,SMB,New Customer,Negotiation,159533
+431,APAC,Enterprise,Renewal,Closed Won,137139
+432,EMEA,Commercial,New Customer,Closed Won,21066
+433,EMEA,Commercial,New Customer,Closed Lost,190056
+434,EMEA,SMB,New Customer,Proposal Sent,92191
+435,APAC,Enterprise,Renewal,Proposal Sent,176580
+437,NA,Commercial,Expansion,Closed Lost,15153
+438,APAC,Enterprise,New Customer,Closed Won,174947
+439,NA,Commercial,New Customer,Proposal Sent,223995
+440,EMEA,SMB,Expansion,Closed Won,107790
+441,APAC,SMB,Expansion,Closed Lost,47227
+442,EMEA,Commercial,Renewal,Proposal Sent,95199
+443,APAC,Commercial,Expansion,Closed Won,217548
+444,APAC,Commercial,Renewal,Closed Won,248018
+445,NA,Enterprise,Renewal,Proposal Sent,48937
+446,NA,Commercial,Renewal,Proposal Sent,209227
+448,EMEA,SMB,Renewal,Closed Won,109404
+450,EMEA,SMB,Expansion,Closed Won,81651
+451,NA,Strategic,New Customer,Closed Won,185193
+452,NA,Strategic,New Customer,Closed Lost,40048
+453,EMEA,Enterprise,New Customer,Closed Lost,222948
+456,EMEA,Enterprise,Expansion,Closed Won,112960
+457,EMEA,Commercial,Renewal,Closed Won,63250
+458,EMEA,SMB,Renewal,Closed Won,159316
+459,EMEA,SMB,New Customer,Closed Lost,216797
+460,NA,Commercial,New Customer,Proposal Sent,132238
+461,APAC,Enterprise,Renewal,Closed Won,247756
+462,EMEA,Enterprise,New Customer,Closed Won,239169
+463,APAC,Commercial,Renewal,Closed Won,84938
+464,EMEA,Commercial,Renewal,Closed Won,191992
+465,EMEA,Enterprise,New Customer,Closed Won,98403
+466,EMEA,Strategic,Expansion,Closed Won,84033
+467,APAC,SMB,Renewal,Negotiation,42956
+468,NA,Strategic,Renewal,Closed Won,204178
+469,EMEA,Strategic,New Customer,Closed Won,241917
+470,NA,Enterprise,New Customer,Negotiation,103551
+471,APAC,SMB,Renewal,Closed Won,203191
+472,NA,Enterprise,Renewal,Proposal Sent,74965
+473,EMEA,Enterprise,New Customer,Closed Won,122684
+474,NA,Enterprise,Renewal,Closed Won,52838
+475,EMEA,Enterprise,New Customer,Closed Won,25896
+476,EMEA,SMB,New Customer,Closed Won,138711
+478,EMEA,Commercial,Expansion,Proposal Sent,118065
+479,APAC,Enterprise,New Customer,Closed Lost,51877
+481,NA,Enterprise,Expansion,Closed Won,71643
+482,APAC,Commercial,Renewal,Closed Won,214500
+483,EMEA,Enterprise,Renewal,Negotiation,20624
+484,APAC,Enterprise,Renewal,Closed Won,41694
+485,NA,Commercial,New Customer,Closed Won,240828
+486,NA,Commercial,Renewal,Proposal Sent,19334
+487,NA,SMB,New Customer,Closed Won,71163
+488,NA,Enterprise,New Customer,Proposal Sent,42514
+489,APAC,Enterprise,Renewal,Negotiation,241463
+490,NA,SMB,Expansion,Closed Lost,85670
+491,EMEA,Enterprise,Renewal,Closed Won,49803
+492,NA,SMB,New Customer,Closed Won,212021
+493,EMEA,Enterprise,New Customer,Closed Won,192615
+494,EMEA,Commercial,Renewal,Closed Won,42143
+495,EMEA,Enterprise,Renewal,Proposal Sent,146389
+496,NA,Strategic,New Customer,Closed Won,14794
+497,APAC,Commercial,New Customer,Proposal Sent,29643
+498,APAC,Enterprise,New Customer,Negotiation,100018
+499,NA,Commercial,New Customer,Closed Won,47412
+500,EMEA,SMB,Renewal,Closed Won,59641
+502,NA,Strategic,Renewal,Proposal Sent,19148
+503,NA,SMB,New Customer,Closed Won,133438
+504,NA,Enterprise,Expansion,Closed Won,67189
+505,NA,Enterprise,Expansion,Proposal Sent,73646
+506,NA,Enterprise,New Customer,Closed Won,59732
+507,APAC,SMB,Renewal,Closed Won,64510
+508,EMEA,Enterprise,Expansion,Negotiation,224433
+509,NA,Enterprise,Expansion,Closed Won,172990
+510,NA,Commercial,New Customer,Negotiation,185528
+511,NA,Enterprise,Expansion,Closed Won,153886
+512,EMEA,Commercial,Renewal,Closed Won,96828
+513,EMEA,Strategic,Expansion,Proposal Sent,76056
+514,NA,Enterprise,Expansion,Closed Won,117111
+515,EMEA,Commercial,Renewal,Closed Won,126214
+516,NA,Enterprise,Renewal,Closed Won,223202
+517,EMEA,Commercial,New Customer,Closed Won,243972
+518,NA,Enterprise,New Customer,Closed Lost,122350
+519,NA,SMB,New Customer,Closed Won,94155
+520,NA,Enterprise,Renewal,Proposal Sent,121202
+521,EMEA,Enterprise,Expansion,Negotiation,74661
+522,EMEA,Enterprise,Renewal,Proposal Sent,89240
+523,NA,Commercial,New Customer,Closed Won,232097
+524,EMEA,Enterprise,Renewal,Closed Won,249906
+525,APAC,SMB,New Customer,Closed Won,119142
+526,NA,Enterprise,New Customer,Closed Lost,164768
+527,NA,Enterprise,New Customer,Closed Lost,229596
+529,EMEA,Commercial,Renewal,Closed Won,116839
+530,EMEA,Commercial,Expansion,Closed Won,115852
+531,APAC,Enterprise,Expansion,Closed Won,170641
+532,APAC,Commercial,Expansion,Closed Won,131963
+533,EMEA,Commercial,Renewal,Closed Won,123847
+534,NA,Strategic,Expansion,Closed Lost,222335
+535,EMEA,Strategic,Expansion,Closed Lost,207812
+536,NA,Commercial,Expansion,Closed Won,194328
+537,NA,SMB,Renewal,Closed Won,157981
+538,APAC,Commercial,Expansion,Closed Won,26433
+539,EMEA,Commercial,Renewal,Negotiation,218360
+540,NA,SMB,Renewal,Closed Won,88076
+541,EMEA,Commercial,New Customer,Closed Won,228469
+542,APAC,Strategic,Renewal,Proposal Sent,181852
+543,APAC,Commercial,Expansion,Closed Won,26466
+544,EMEA,Enterprise,New Customer,Closed Lost,123559
+545,EMEA,Enterprise,Renewal,Proposal Sent,133044
+546,NA,SMB,New Customer,Closed Won,107990
+547,NA,SMB,Renewal,Closed Won,76659
+549,NA,Commercial,Expansion,Closed Won,41097
+550,APAC,Commercial,Expansion,Closed Won,44697
+551,EMEA,Enterprise,New Customer,Closed Lost,42842
+552,EMEA,Commercial,New Customer,Closed Lost,58289
+553,EMEA,Commercial,Renewal,Closed Won,118048
+554,EMEA,Commercial,New Customer,Closed Won,213912
+555,NA,Commercial,Expansion,Negotiation,190151
+556,APAC,Enterprise,New Customer,Closed Won,32331
+557,APAC,Enterprise,Expansion,Closed Won,178850
+558,EMEA,Commercial,New Customer,Negotiation,108049
+559,EMEA,SMB,New Customer,Proposal Sent,66768
+560,APAC,Commercial,Renewal,Closed Won,236577
+561,APAC,Commercial,New Customer,Closed Won,32831
+562,EMEA,Commercial,New Customer,Closed Won,33670
+563,NA,Enterprise,Renewal,Closed Won,53259
+564,NA,Enterprise,Renewal,Closed Won,59905
+565,EMEA,Enterprise,Renewal,Negotiation,15807
+566,NA,SMB,Expansion,Closed Won,16758
+567,EMEA,Commercial,New Customer,Closed Lost,56876
+568,NA,Enterprise,Renewal,Proposal Sent,54187
+569,EMEA,Enterprise,New Customer,Closed Lost,183561
+570,EMEA,Commercial,New Customer,Proposal Sent,206768
+572,EMEA,SMB,Renewal,Closed Won,38987
+573,EMEA,Commercial,New Customer,Closed Lost,195671
+574,EMEA,Strategic,Renewal,Closed Won,146576
+575,NA,Commercial,Expansion,Closed Lost,29988
+576,APAC,Strategic,Renewal,Closed Won,152185
+577,APAC,Commercial,Renewal,Closed Won,60001
+578,EMEA,Commercial,New Customer,Negotiation,215406
+579,APAC,Enterprise,Renewal,Closed Won,74039
+580,NA,SMB,Renewal,Closed Won,116999
+581,NA,Enterprise,New Customer,Closed Won,74181
+582,EMEA,Commercial,New Customer,Closed Won,178642
+583,NA,Strategic,Renewal,Closed Won,145151
+584,APAC,Commercial,Expansion,Closed Won,246429
+585,EMEA,Strategic,Expansion,Closed Lost,243083
+586,NA,Commercial,Renewal,Closed Won,201837
+587,EMEA,SMB,New Customer,Closed Lost,168945
+588,NA,Enterprise,New Customer,Proposal Sent,59912
+589,APAC,Commercial,New Customer,Closed Won,27777
+590,EMEA,Commercial,Renewal,Proposal Sent,170749
+591,EMEA,Commercial,Renewal,Closed Won,213875
+592,APAC,Enterprise,Expansion,Negotiation,246301
+593,NA,Strategic,Expansion,Closed Lost,65244
+594,EMEA,Enterprise,Renewal,Negotiation,212505
+595,APAC,Commercial,New Customer,Proposal Sent,211698
+598,NA,Enterprise,New Customer,Closed Won,139153
+599,EMEA,Commercial,New Customer,Closed Lost,129127
+600,NA,Enterprise,New Customer,Closed Won,129626
+601,EMEA,Commercial,New Customer,Closed Lost,91436
+602,EMEA,SMB,Renewal,Negotiation,114575
+603,NA,Commercial,Expansion,Proposal Sent,127321
+604,APAC,Commercial,New Customer,Closed Lost,132593
+605,EMEA,Strategic,Renewal,Closed Won,145643
+606,APAC,Commercial,Renewal,Closed Won,219738
+607,EMEA,SMB,New Customer,Closed Won,102673
+608,NA,Enterprise,Expansion,Closed Won,93218
+609,EMEA,Commercial,Renewal,Closed Won,85986
+610,EMEA,SMB,Expansion,Proposal Sent,48789
+611,APAC,Strategic,New Customer,Closed Lost,53822
+612,EMEA,SMB,Expansion,Closed Lost,216869
+614,EMEA,Commercial,Expansion,Negotiation,124431
+615,EMEA,SMB,Renewal,Negotiation,241852
+616,NA,Commercial,New Customer,Closed Won,179197
+618,NA,Enterprise,New Customer,Closed Won,30009
+619,APAC,Commercial,Renewal,Closed Won,147706
+620,NA,Strategic,New Customer,Proposal Sent,30421
+621,NA,Enterprise,New Customer,Proposal Sent,109164
+622,APAC,Commercial,Expansion,Negotiation,76567
+624,EMEA,Commercial,Renewal,Proposal Sent,65823
+626,EMEA,Commercial,New Customer,Closed Won,69170
+627,EMEA,Commercial,Renewal,Proposal Sent,107874
+628,APAC,Enterprise,New Customer,Closed Won,187406
+629,APAC,Strategic,Expansion,Closed Won,177906
+631,EMEA,SMB,New Customer,Closed Won,67818
+633,NA,Commercial,Expansion,Closed Won,44576
+634,NA,Enterprise,Expansion,Closed Lost,174118
+635,APAC,Commercial,New Customer,Closed Won,18667
+636,NA,SMB,New Customer,Closed Won,63612
+637,NA,Enterprise,New Customer,Closed Won,157580
+638,NA,Enterprise,Expansion,Proposal Sent,176874
+639,NA,Enterprise,Expansion,Closed Won,158610
+640,NA,Strategic,Expansion,Closed Won,106250
+641,EMEA,Enterprise,Expansion,Closed Won,25639
+642,EMEA,Enterprise,Renewal,Closed Won,224895
+644,EMEA,SMB,Expansion,Closed Lost,14873
+645,NA,Strategic,New Customer,Closed Won,230106
+647,APAC,Enterprise,Renewal,Closed Won,87132
+648,NA,Commercial,Renewal,Closed Won,223533
+649,APAC,Strategic,New Customer,Closed Lost,11189
+650,EMEA,Enterprise,Expansion,Closed Lost,84628
+651,APAC,Enterprise,New Customer,Closed Won,90913
+652,EMEA,SMB,Expansion,Closed Won,130919
+653,EMEA,Enterprise,Renewal,Closed Won,149310
+655,EMEA,Enterprise,Renewal,Negotiation,149883
+656,NA,Enterprise,New Customer,Negotiation,76797
+657,NA,Commercial,Renewal,Closed Won,209836
+658,NA,SMB,New Customer,Closed Lost,218933
+659,EMEA,Enterprise,New Customer,Closed Won,75755
+660,NA,SMB,New Customer,Closed Won,92903
+661,EMEA,Commercial,Expansion,Closed Lost,93942
+662,NA,Enterprise,New Customer,Proposal Sent,172249
+663,EMEA,Strategic,Expansion,Negotiation,141765
+664,EMEA,Enterprise,New Customer,Closed Lost,236591
+665,APAC,Commercial,New Customer,Closed Won,119342
+666,NA,SMB,Expansion,Closed Won,46166
+667,NA,Enterprise,Renewal,Closed Won,191486
+668,NA,Strategic,Renewal,Proposal Sent,77476
+669,APAC,Commercial,Renewal,Closed Won,123037
+670,NA,SMB,Renewal,Negotiation,199258
+672,APAC,Enterprise,New Customer,Closed Won,29229
+673,APAC,Enterprise,Renewal,Closed Won,56461
+674,APAC,Commercial,New Customer,Closed Won,69668
+675,EMEA,Enterprise,Expansion,Closed Lost,135945
+676,EMEA,Strategic,New Customer,Closed Won,58482
+677,EMEA,SMB,Renewal,Closed Won,202789
+679,NA,Enterprise,Expansion,Closed Won,18157
+680,EMEA,Enterprise,Renewal,Closed Won,123349
+681,APAC,SMB,Renewal,Closed Won,56724
+682,NA,Commercial,New Customer,Closed Lost,158000
+683,APAC,SMB,Renewal,Negotiation,114414
+684,EMEA,SMB,Renewal,Proposal Sent,162180
+686,NA,SMB,Renewal,Closed Won,72881
+687,APAC,Strategic,Expansion,Closed Lost,171343
+688,APAC,Strategic,New Customer,Closed Lost,184660
+690,APAC,Enterprise,New Customer,Closed Lost,133431
+691,NA,Commercial,Expansion,Closed Won,167529
+692,APAC,Commercial,Expansion,Closed Lost,14611
+693,APAC,Enterprise,Renewal,Proposal Sent,219793
+694,NA,Enterprise,Expansion,Closed Won,216586
+695,EMEA,SMB,New Customer,Negotiation,145729
+696,NA,Commercial,Renewal,Negotiation,133314
+698,NA,Commercial,Renewal,Closed Won,104029
+699,NA,Strategic,Expansion,Closed Won,21414
+700,NA,Strategic,New Customer,Closed Lost,224489
+701,APAC,Strategic,Renewal,Closed Won,77046
+702,NA,Enterprise,Expansion,Negotiation,129677
+704,EMEA,Enterprise,Expansion,Negotiation,168328
+706,NA,Strategic,New Customer,Negotiation,216360
+707,EMEA,Commercial,New Customer,Closed Lost,180021
+709,EMEA,Enterprise,Expansion,Closed Lost,62548
+710,NA,SMB,Renewal,Closed Won,18256
+711,APAC,Enterprise,Renewal,Closed Won,150558
+712,EMEA,SMB,New Customer,Closed Won,112014
+713,EMEA,Enterprise,Renewal,Closed Won,29585
+714,NA,SMB,New Customer,Closed Won,37958
+716,NA,SMB,New Customer,Negotiation,168458
+718,EMEA,Enterprise,Renewal,Negotiation,98434
+719,NA,Enterprise,New Customer,Closed Won,187114
+720,EMEA,Enterprise,New Customer,Negotiation,186007
+721,EMEA,SMB,New Customer,Closed Lost,101021
+722,EMEA,Enterprise,Renewal,Closed Won,55408
+723,EMEA,Commercial,New Customer,Closed Won,131457
+725,EMEA,Enterprise,Renewal,Closed Won,179656
+726,NA,Strategic,New Customer,Closed Won,91188
+727,EMEA,Enterprise,New Customer,Closed Won,214884
+728,EMEA,Enterprise,New Customer,Proposal Sent,78620
+729,NA,Strategic,Expansion,Closed Lost,88278
+730,APAC,SMB,Expansion,Closed Won,107663
+731,EMEA,Enterprise,New Customer,Closed Won,248893
+732,EMEA,SMB,New Customer,Closed Won,110909
+733,APAC,SMB,Expansion,Closed Won,238554
+735,EMEA,Commercial,New Customer,Negotiation,125604
+737,NA,Strategic,Renewal,Closed Won,78610
+738,NA,Commercial,Expansion,Closed Lost,92934
+739,EMEA,Enterprise,New Customer,Closed Won,149265
+740,APAC,Enterprise,Renewal,Proposal Sent,136804
+741,EMEA,SMB,Renewal,Closed Won,116768
+742,APAC,Strategic,Renewal,Proposal Sent,205797
+743,NA,Enterprise,Renewal,Closed Won,219472
+744,EMEA,SMB,New Customer,Closed Won,93224
+745,EMEA,Enterprise,Renewal,Closed Won,123224
+747,EMEA,SMB,New Customer,Closed Won,226979
+748,NA,Commercial,Renewal,Proposal Sent,77086
+750,NA,Commercial,Renewal,Proposal Sent,114154
+751,APAC,Enterprise,Renewal,Closed Won,50503
+752,NA,Commercial,New Customer,Closed Won,35138
+753,NA,Commercial,Expansion,Closed Won,43184
+754,EMEA,SMB,New Customer,Closed Lost,126102
+757,EMEA,Commercial,Expansion,Closed Won,130402
+758,EMEA,SMB,New Customer,Closed Lost,200912
+759,NA,Commercial,Renewal,Closed Won,118697
+760,APAC,Enterprise,Renewal,Negotiation,167053
+761,NA,Commercial,Expansion,Closed Won,39750
+763,NA,Enterprise,Expansion,Closed Lost,176175
+764,NA,SMB,Expansion,Closed Won,14213
+765,APAC,Commercial,New Customer,Closed Lost,246836
+766,EMEA,SMB,Renewal,Closed Won,61514
+767,EMEA,SMB,New Customer,Negotiation,194075
+768,NA,SMB,Expansion,Closed Lost,36256
+769,EMEA,SMB,New Customer,Closed Won,103821
+770,APAC,Commercial,Expansion,Closed Won,70042
+772,NA,SMB,New Customer,Proposal Sent,165818
+773,NA,SMB,Renewal,Negotiation,13279
+774,EMEA,Strategic,New Customer,Proposal Sent,245605
+775,EMEA,Enterprise,New Customer,Closed Lost,162519
+776,APAC,SMB,Expansion,Closed Won,75388
+778,NA,SMB,Renewal,Closed Won,212148
+779,EMEA,SMB,Renewal,Closed Won,108907
+780,APAC,Commercial,Expansion,Closed Won,99185
+781,APAC,Commercial,Renewal,Proposal Sent,75998
+782,EMEA,Commercial,Expansion,Negotiation,196537
+783,EMEA,SMB,New Customer,Closed Won,146105
+784,EMEA,Commercial,New Customer,Closed Won,64290
+785,NA,SMB,Expansion,Closed Won,118485
+786,EMEA,Commercial,New Customer,Proposal Sent,224179
+787,APAC,Strategic,New Customer,Closed Won,94026
+788,EMEA,Enterprise,New Customer,Closed Won,95753
+789,EMEA,Strategic,Renewal,Closed Won,214919
+790,APAC,Enterprise,Expansion,Negotiation,19660
+791,NA,Strategic,Renewal,Closed Won,234100
+792,NA,SMB,New Customer,Closed Won,92661
+793,EMEA,Enterprise,New Customer,Proposal Sent,223182
+794,NA,Enterprise,Expansion,Proposal Sent,186941
+795,EMEA,Enterprise,New Customer,Closed Won,10617
+796,NA,Commercial,Renewal,Closed Won,157529
+797,NA,Enterprise,Expansion,Closed Lost,38960
+798,NA,SMB,New Customer,Closed Lost,31803
+799,EMEA,Commercial,New Customer,Closed Won,86976
+801,EMEA,Enterprise,Expansion,Closed Lost,202118
+802,EMEA,SMB,New Customer,Closed Won,234372
+803,NA,SMB,New Customer,Negotiation,214717
+804,APAC,Enterprise,Expansion,Closed Won,178502
+805,EMEA,Commercial,New Customer,Closed Won,95486
+806,EMEA,Commercial,Expansion,Closed Lost,21859
+807,EMEA,Commercial,New Customer,Closed Won,136709
+809,NA,Commercial,New Customer,Closed Lost,106648
+810,NA,SMB,New Customer,Closed Won,185595
+811,NA,Enterprise,Expansion,Closed Won,218015
+812,EMEA,SMB,New Customer,Proposal Sent,222615
+813,APAC,SMB,Expansion,Closed Won,205165
+815,EMEA,Commercial,New Customer,Closed Won,115641
+816,NA,SMB,Renewal,Closed Won,216331
+817,NA,Strategic,Expansion,Closed Lost,111572
+818,EMEA,SMB,Renewal,Negotiation,238761
+819,EMEA,Enterprise,Renewal,Negotiation,127073
+820,NA,Strategic,New Customer,Closed Won,163914
+821,EMEA,Enterprise,New Customer,Closed Won,67252
+822,EMEA,Enterprise,Expansion,Closed Won,174022
+823,APAC,Enterprise,Renewal,Closed Won,93437
+824,EMEA,Enterprise,Renewal,Closed Won,218522
+825,APAC,Commercial,Renewal,Closed Won,43748
+826,EMEA,Commercial,Expansion,Closed Lost,120205
+827,EMEA,SMB,New Customer,Closed Lost,174612
+828,APAC,Strategic,New Customer,Closed Lost,171169
+829,APAC,SMB,New Customer,Closed Won,110482
+830,NA,Enterprise,New Customer,Closed Lost,249861
+831,EMEA,SMB,Expansion,Closed Lost,157634
+832,EMEA,Strategic,New Customer,Closed Lost,246280
+833,EMEA,SMB,New Customer,Closed Lost,114582
+835,APAC,SMB,New Customer,Closed Won,101657
+836,NA,Commercial,New Customer,Closed Won,97253
+838,NA,Commercial,New Customer,Closed Lost,19221
+839,NA,Enterprise,New Customer,Closed Lost,26594
+840,EMEA,Strategic,New Customer,Closed Lost,179653
+841,EMEA,Strategic,New Customer,Closed Won,212226
+842,NA,SMB,Expansion,Closed Won,204959
+843,NA,Commercial,Expansion,Closed Won,226458
+844,EMEA,Commercial,Expansion,Closed Won,248724
+845,EMEA,Commercial,New Customer,Closed Lost,20122
+846,NA,Enterprise,Renewal,Proposal Sent,122028
+847,NA,Commercial,Renewal,Closed Won,184682
+848,EMEA,Commercial,New Customer,Closed Won,49963
+849,NA,Strategic,Expansion,Closed Won,103551
+851,APAC,Enterprise,Renewal,Negotiation,118418
+852,NA,Commercial,New Customer,Proposal Sent,58541
+853,NA,SMB,New Customer,Closed Won,234174
+854,APAC,Commercial,New Customer,Negotiation,41367
+856,EMEA,Enterprise,New Customer,Closed Won,22828
+857,EMEA,SMB,Renewal,Closed Won,36752
+858,EMEA,Enterprise,Renewal,Proposal Sent,56891
+859,NA,Commercial,Renewal,Proposal Sent,122503
+860,APAC,Commercial,New Customer,Closed Lost,94318
+861,EMEA,SMB,Renewal,Closed Won,147391
+863,APAC,Strategic,New Customer,Closed Lost,232484
+864,APAC,SMB,New Customer,Closed Won,106284
+865,NA,SMB,Renewal,Closed Won,38808
+866,EMEA,Commercial,Renewal,Closed Won,190239
+867,EMEA,SMB,Expansion,Closed Won,34039
+868,NA,Enterprise,New Customer,Closed Won,42660
+869,EMEA,Enterprise,New Customer,Closed Lost,222327
+870,EMEA,Enterprise,Renewal,Closed Won,163533
+871,NA,Strategic,Renewal,Closed Won,24974
+872,NA,Commercial,Expansion,Closed Lost,156696
+873,NA,Strategic,New Customer,Closed Lost,136380
+874,EMEA,Enterprise,Expansion,Closed Won,211120
+875,EMEA,Commercial,New Customer,Negotiation,184184
+877,EMEA,SMB,New Customer,Closed Lost,141142
+878,EMEA,Strategic,New Customer,Closed Lost,30831
+879,NA,Commercial,New Customer,Closed Won,81245
+881,NA,Enterprise,New Customer,Negotiation,42979
+882,EMEA,Enterprise,Renewal,Negotiation,174174
+883,EMEA,Enterprise,Renewal,Closed Won,136297
+885,NA,Enterprise,Expansion,Closed Lost,57863
+886,NA,Enterprise,New Customer,Closed Won,59266
+887,APAC,SMB,New Customer,Closed Won,152485
+888,EMEA,Commercial,New Customer,Closed Won,98354
+889,EMEA,Commercial,Renewal,Proposal Sent,189123
+890,APAC,Enterprise,New Customer,Closed Won,246040
+891,EMEA,SMB,Expansion,Closed Lost,110780
+892,NA,Commercial,Renewal,Closed Won,38618
+893,EMEA,Strategic,Renewal,Closed Won,163920
+894,EMEA,Commercial,Expansion,Closed Lost,141304
+895,EMEA,Enterprise,New Customer,Closed Lost,205762
+896,NA,Enterprise,Expansion,Closed Won,155643
+897,EMEA,Commercial,Renewal,Negotiation,16183
+898,APAC,Enterprise,New Customer,Proposal Sent,85907
+899,EMEA,Commercial,Expansion,Closed Lost,232016
+900,APAC,Strategic,New Customer,Closed Lost,99029
+901,NA,Enterprise,Renewal,Proposal Sent,208755
+902,NA,Enterprise,New Customer,Closed Lost,162392
+903,EMEA,Commercial,New Customer,Closed Lost,129854
+904,EMEA,Enterprise,New Customer,Closed Won,86876
+905,APAC,Enterprise,Expansion,Closed Won,89691
+907,EMEA,Commercial,Renewal,Closed Won,171840
+909,APAC,Strategic,New Customer,Negotiation,86541
+910,NA,SMB,New Customer,Negotiation,121631
+911,NA,SMB,New Customer,Closed Won,52960
+912,EMEA,Strategic,Renewal,Closed Won,241844
+913,APAC,Enterprise,Renewal,Closed Won,96653
+914,APAC,SMB,New Customer,Closed Won,150101
+915,EMEA,Enterprise,New Customer,Closed Won,59888
+916,EMEA,Commercial,Renewal,Closed Won,184705
+917,NA,SMB,New Customer,Closed Won,173512
+918,EMEA,Commercial,New Customer,Closed Lost,150278
+919,APAC,Enterprise,New Customer,Negotiation,121642
+920,NA,Enterprise,Expansion,Negotiation,166339
+921,NA,Commercial,Renewal,Proposal Sent,76472
+922,NA,Commercial,New Customer,Proposal Sent,221805
+923,EMEA,Commercial,Expansion,Proposal Sent,124649
+924,APAC,Commercial,Renewal,Closed Won,15329
+926,EMEA,Commercial,Renewal,Closed Won,90135
+929,NA,Enterprise,Expansion,Closed Won,105797
+930,EMEA,SMB,New Customer,Closed Lost,120190
+932,EMEA,SMB,New Customer,Closed Won,22937
+933,NA,SMB,Expansion,Negotiation,24599
+934,NA,SMB,Renewal,Closed Won,158215
+935,EMEA,Commercial,New Customer,Closed Won,243552
+936,EMEA,SMB,New Customer,Closed Won,77797
+937,APAC,SMB,New Customer,Closed Won,206532
+938,APAC,Commercial,Expansion,Closed Won,129893
+939,NA,Commercial,New Customer,Closed Won,64742
+940,EMEA,Enterprise,New Customer,Closed Won,183434
+941,EMEA,Enterprise,Expansion,Negotiation,38725
+942,NA,Commercial,New Customer,Closed Lost,198983
+943,NA,SMB,Renewal,Closed Won,98996
+945,NA,Strategic,Renewal,Closed Won,51903
+946,NA,Enterprise,Expansion,Negotiation,152555
+947,EMEA,Commercial,Renewal,Closed Won,105092
+948,EMEA,Strategic,Renewal,Closed Won,192203
+949,EMEA,Enterprise,Renewal,Closed Won,126185
+950,NA,SMB,Renewal,Closed Won,92478
+951,NA,Enterprise,New Customer,Closed Won,186540
+953,EMEA,Strategic,Renewal,Negotiation,249730
+954,NA,Enterprise,Renewal,Closed Won,134305
+955,APAC,Commercial,New Customer,Closed Won,116588
+956,EMEA,Strategic,New Customer,Closed Won,56946
+957,NA,Enterprise,New Customer,Closed Won,238493
+958,NA,SMB,Renewal,Closed Won,33214
+959,APAC,Strategic,New Customer,Closed Lost,161712
+960,APAC,SMB,New Customer,Closed Won,212505
+961,NA,SMB,Renewal,Negotiation,213459
+962,APAC,SMB,New Customer,Closed Won,202958
+964,NA,SMB,Renewal,Closed Won,221404
+965,EMEA,SMB,New Customer,Closed Lost,60554
+966,APAC,Commercial,New Customer,Closed Lost,136862
+967,NA,Enterprise,New Customer,Closed Won,52808
+968,NA,Strategic,New Customer,Proposal Sent,81228
+969,APAC,SMB,New Customer,Closed Lost,30884
+970,NA,Commercial,Expansion,Closed Won,234668
+971,EMEA,Strategic,New Customer,Closed Won,240558
+972,APAC,Strategic,New Customer,Closed Lost,65201
+973,NA,SMB,New Customer,Closed Won,109972
+974,NA,Enterprise,New Customer,Proposal Sent,137156
+975,NA,SMB,New Customer,Closed Lost,190363
+976,NA,Commercial,Renewal,Closed Won,94634
+977,EMEA,Commercial,Renewal,Closed Won,68751
+978,NA,Enterprise,Renewal,Closed Won,102662
+979,APAC,SMB,Renewal,Negotiation,41797
+980,EMEA,SMB,Renewal,Proposal Sent,112895
+981,NA,SMB,Expansion,Closed Lost,123577
+983,APAC,Enterprise,Renewal,Closed Won,105967
+984,EMEA,SMB,New Customer,Closed Won,215631
+985,NA,SMB,New Customer,Negotiation,59364
+986,NA,Enterprise,Expansion,Closed Lost,46437
+987,NA,Enterprise,Renewal,Closed Won,85581
+988,NA,Strategic,Renewal,Proposal Sent,110365
+989,NA,SMB,New Customer,Closed Won,202234
+991,EMEA,Commercial,Renewal,Closed Won,100740
+992,APAC,SMB,Renewal,Closed Won,152019
+994,EMEA,Commercial,New Customer,Closed Won,242818
+995,NA,SMB,New Customer,Closed Won,37185
+996,APAC,Enterprise,Expansion,Closed Won,33466
+997,NA,Commercial,New Customer,Negotiation,105165
+998,NA,SMB,Renewal,Closed Won,79047
+999,APAC,SMB,Expansion,Closed Won,148258
+1000,EMEA,Enterprise,New Customer,Closed Won,66454
+358,EMEA,Strategic,Renewal,Closed Lost,47693
+377,EMEA,SMB,Renewal,Closed Lost,80007
+56,NA,Commercial,Renewal,Closed Lost,41518
+429,EMEA,SMB,Renewal,Closed Lost,115909
+232,NA,Commercial,Renewal,Closed Lost,93046
+528,NA,Strategic,Renewal,Closed Lost,24275
+630,EMEA,Enterprise,Renewal,Closed Lost,122563
+88,EMEA,Enterprise,Renewal,Closed Lost,148926
+325,EMEA,Enterprise,Renewal,Closed Lost,143819
+884,EMEA,Enterprise,Renewal,Closed Lost,52807
+169,NA,Enterprise,Renewal,Closed Lost,212999
+480,EMEA,Commercial,Renewal,Closed Lost,220847
+96,EMEA,SMB,Renewal,Closed Lost,18070
+310,APAC,Enterprise,Renewal,Closed Lost,120409
+736,EMEA,Commercial,Renewal,Closed Lost,100839
+982,NA,Enterprise,Renewal,Closed Lost,18877
+908,APAC,Enterprise,Renewal,Closed Lost,128061
+11,NA,Strategic,Renewal,Closed Lost,67816
+734,NA,SMB,Renewal,Closed Lost,84179
+855,NA,Strategic,Renewal,Closed Lost,225730
+548,EMEA,Enterprise,Renewal,Closed Lost,129000
+364,NA,Enterprise,Renewal,Closed Lost,96469
+274,EMEA,SMB,Renewal,Closed Lost,72231
+617,EMEA,Commercial,Renewal,Closed Lost,208708
+345,APAC,Commercial,Renewal,Closed Lost,249032
+98,EMEA,Enterprise,Renewal,Closed Lost,151600
+121,APAC,Commercial,Renewal,Closed Lost,214518
+944,NA,Commercial,Renewal,Closed Lost,28248
