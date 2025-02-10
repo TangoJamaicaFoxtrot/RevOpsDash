@@ -22,7 +22,7 @@ def load_sales_data():
 
 @st.cache_data
 def load_lead_data():
-    lead_df = pd.read_csv("/Users/revops_leads.csv")
+    lead_df = pd.read_csv("revops_leads.csv")
     lead_df["Region"] = lead_df["Region"].fillna("NA")
     return lead_df
 
