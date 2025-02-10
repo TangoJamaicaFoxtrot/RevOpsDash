@@ -12,7 +12,7 @@ df.head()
 
 
 
-updated_sales_data = pd.read_csv("/Users/anastasia/Downloads/updated_sales_data_balanced.csv")
+updated_sales_data = pd.read_csv("updated_sales_data_balanced.csv")
 
 
 # Filter for New Customers (Closed Won & Opportunity Type = "New Customer")
@@ -306,7 +306,7 @@ fig.show()
 
 # Lead Analysis
 
-lead_df = pd.read_csv("/Users/anastasia/Downloads/updated_lead_data_with_strategic.csv")
+lead_df = pd.read_csv("revops_lead_data.csv")
 lead_df["Region"] = lead_df["Region"].fillna("NA")
 print(lead_df.head())
 lead_volume_overview = lead_df.groupby(["Region", "Segment", "Lead_Source"]).agg(
