@@ -185,7 +185,7 @@ with st.expander("Sales Performance"):
         annotation.text = annotation.text.split("=")[-1]
     st.plotly_chart(fig_stacked, use_container_width=True)
     
- st.markdown("**Win Rate Heatmap by Region & Segment**")
+    st.markdown("**Win Rate Heatmap by Region & Segment**")
     total_deals = df.groupby(["Region", "Segment"])["Opportunity_ID"].count()
     closed_won  = df[df["Deal_Stage"] == "Closed Won"].groupby(["Region", "Segment"])["Opportunity_ID"].count()
     win_rate_df = (closed_won / total_deals * 100).fillna(0).reset_index()
