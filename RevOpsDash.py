@@ -131,35 +131,6 @@ with st.expander("Sales Performance"):
     )
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
-    st.markdown("**Win Rate Bar Chart by Region & Segment**")
-    total_deals_by_region = df.groupby("Region")["Opportunity_ID"].count()
-    closed_won_by_region  = df[df["Deal_Stage"] == "Closed Won"].groupby("Region")["Opportunity_ID"].count()
-    win_rate_region = (closed_won_by_region / total_deals_by_region * 100).fillna(0).reset_index()
-    win_rate_region.columns = ["Category", "Win Rate (%)"]
-    win_rate_region["Type"] = "Region"
-
-    total_deals_by_segment = df.groupby("Segment")["Opportunity_ID"].count()
-    closed_won_by_segment  = df[df["Deal_Stage"] == "Closed Won"].groupby("Segment")["Opportunity_ID"].count()
-    win_rate_segment = (closed_won_by_segment / total_deals_by_segment * 100).fillna(0).reset_index()
-    win_rate_segment.columns = ["Category", "Win Rate (%)"]
-    win_rate_segment["Type"] = "Segment"
-
-    win_rate_data = pd.concat([win_rate_region, win_rate_segment])
-    max_win = win_rate_data["Win Rate (%)"].max()
-    y_lim = min(100, max_win + 10)
-    fig_bar = px.bar(
-        win_rate_data,
-        x="Category",
-        y="Win Rate (%)",
-        color="Type",
-        barmode="group",
-        title="Win Rate by Region & Segment",
-        labels={"Category": "Region / Segment", "Win Rate (%)": "Win Rate (%)"},
-        color_discrete_map={"Region": "blue", "Segment": "green"}
-    )
-    fig_bar.update_layout(yaxis=dict(range=[0, y_lim]))
-    st.plotly_chart(fig_bar, use_container_width=True)
-
     st.markdown("**Sales Cycle Distribution by Region**")
     plt.figure(figsize=(10, 5))
     sns.boxplot(
