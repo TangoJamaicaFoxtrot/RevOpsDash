@@ -80,7 +80,6 @@ with st.expander("Revenue Overview"):
         y="Total_Revenue",
         color="Segment",          # Use Segment as the hue/color
         barmode="group",          # "group" mode shows side-by-side bars; try "stack" if preferred
-        title="Total Closed Won Revenue by Region & Segment",
         labels={"Total_Revenue": "Total Revenue (£)"}
     )
     st.plotly_chart(fig, use_container_width=True)
