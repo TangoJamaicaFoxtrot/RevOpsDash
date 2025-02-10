@@ -64,22 +64,30 @@ with st.expander("Headline Metrics", expanded=True):
 # Revenue Overview: MRR/ARR trends & revenue breakdown
 # --------------------------------------------------
 with st.expander("Revenue Overview"):
-    st.markdown("**Closed Won Revenue by Region**")
-    # Aggregate revenue from closed won deals by region
-    closed_won_rev = (
-        df[df["Deal_Stage"] == "Closed Won"]
-        .groupby("Region")
-        .agg(Total_Revenue=("Deal_Size (£)", "sum"))
-        .reset_index()
-    )
-    plt.figure(figsize=(10, 5))
-    sns.barplot(x="Region", y="Total_Revenue", data=closed_won_rev, palette="Purples")
-    plt.xlabel("Region")
-    plt.ylabel("Total Revenue (£)")
-    plt.title("Total Closed Won Revenue by Region")
-    plt.xticks(rotation=45)
-    st.pyplot(plt.gcf())
-    plt.clf()
+st.markdown("**Closed Won Revenue by Region & Segment**")
+
+# Aggregate revenue from closed won deals by Region and Segment
+closed_won_rev = (
+    df[df["Deal_Stage"] == "Closed Won"]
+    .groupby(["Region", "Segment"])
+    .agg(Total_Revenue=("Deal_Size (£)", "sum"))
+    .reset_index()
+)
+
+# Create a Plotly Express bar chart
+fig = px.bar(
+    closed_won_rev,
+    x="Region",
+    y="Total_Revenue",
+    color="Segment",          # Use Segment as the hue/color
+    barmode="group",          # You can also try "stack" if you prefer stacked bars
+    title="Total Closed Won Revenue by Region & Segment",
+    labels={"Total_Revenue": "Total Revenue (£)"}
+)
+
+# Display the chart in Streamlit
+st.plotly_chart(fig, use_container_width=True)
+
 
     st.markdown("**Revenue Trend (ARR/MRR)**")
     # If your data contains a closed date and ARR/MRR column, you can show a trend.
