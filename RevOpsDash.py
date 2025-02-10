@@ -104,7 +104,6 @@ with st.expander("Revenue Overview"):
 # --------------------------------------------------
 # Sales Performance: Pipeline analysis, win rates, sales cycle
 # --------------------------------------------------
-with st.expander("Sales Performance"):
     st.markdown("**Win Rate Heatmap by Region & Segment**")
     total_deals = df.groupby(["Region", "Segment"])["Opportunity_ID"].count()
     closed_won  = df[df["Deal_Stage"] == "Closed Won"].groupby(["Region", "Segment"])["Opportunity_ID"].count()
@@ -185,7 +184,33 @@ with st.expander("Sales Performance"):
     for annotation in fig_stacked.layout.annotations:
         annotation.text = annotation.text.split("=")[-1]
     st.plotly_chart(fig_stacked, use_container_width=True)
-
+    
+ st.markdown("**Win Rate Heatmap by Region & Segment**")
+    total_deals = df.groupby(["Region", "Segment"])["Opportunity_ID"].count()
+    closed_won  = df[df["Deal_Stage"] == "Closed Won"].groupby(["Region", "Segment"])["Opportunity_ID"].count()
+    win_rate_df = (closed_won / total_deals * 100).fillna(0).reset_index()
+    win_rate_df.columns = ["Region", "Segment", "Win Rate (%)"]
+    win_rate_df["Win Rate (%)"] = win_rate_df["Win Rate (%)"].round(2)
+    heatmap_data = win_rate_df.pivot(index="Segment", columns="Region", values="Win Rate (%)").astype(float)
+    fig_heatmap = px.imshow(
+        heatmap_data,
+        color_continuous_scale="Blues",
+        title="Win Rate Heatmap by Region & Segment",
+        labels={"color": "Win Rate (%)"}
+    )
+    fig_heatmap.update_traces(
+        text=heatmap_data.applymap(lambda x: f"{x:.2f}"),
+        texttemplate="%{text}"
+    )
+    fig_heatmap.update_layout(
+        width=1000,
+        height=500,
+        margin=dict(l=50, r=50, t=50, b=50),
+        xaxis_title="",
+        yaxis_title="",
+        coloraxis_colorbar=dict(title="Win Rate (%)")
+    )
+    st.plotly_chart(fig_heatmap, use_container_width=True)
 # --------------------------------------------------
 # Customer Acquisition & Retention: CAC, CLTV, churn rates
 # --------------------------------------------------
