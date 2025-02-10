@@ -64,8 +64,7 @@ with st.expander("Headline Metrics", expanded=True):
 # Revenue Overview: MRR/ARR trends & revenue breakdown
 # --------------------------------------------------
 with st.expander("Revenue Overview"):
-
-st.markdown("**Closed Won Revenue by Region & Segment**")
+    st.markdown("**Closed Won Revenue by Region & Segment**")
 
 # Aggregate revenue from closed won deals by Region and Segment
 closed_won_rev = (
@@ -88,6 +87,7 @@ fig = px.bar(
 
 # Display the chart in Streamlit
 st.plotly_chart(fig, use_container_width=True)
+
 
 
     st.markdown("**Revenue Trend (ARR/MRR)**")
