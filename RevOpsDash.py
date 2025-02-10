@@ -150,8 +150,7 @@ fig_sales_cycle = px.box(
 # Display the updated chart
 st.plotly_chart(fig_sales_cycle, use_container_width=True)
 
-
-    st.markdown("**Pipeline Breakdown by Region & Segment**")
+st.markdown("**Pipeline Breakdown by Region & Segment**")
     stacked_bar_data = (
         df.groupby(["Region", "Segment", "Deal_Stage"])
         .agg({"Opportunity_ID": "count"})
