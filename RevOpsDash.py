@@ -14,7 +14,7 @@ st.set_page_config(page_title="Revenue Operations Dashboard", layout="wide")
 @st.cache_data
 def load_sales_data():
     # Update the file path as needed
-    df = pd.read_csv("/Users/anastasia/Downloads/revops_data.csv")
+    df = pd.read_csv("revops_data.csv")
     df["Region"] = df["Region"].fillna("NA")
     df["Deal_Size (£)"] = df["Deal_Size (£)"].round(2)
     return df
@@ -22,7 +22,7 @@ def load_sales_data():
 @st.cache_data
 def load_lead_data():
     # Update the file path as needed
-    lead_df = pd.read_csv("/Users/anastasia/Downloads/updated_lead_data_with_strategic.csv")
+    lead_df = pd.read_csv("revops_lead_data.csv")
     lead_df["Region"] = lead_df["Region"].fillna("NA")
     return lead_df
 
