@@ -161,7 +161,7 @@ with st.expander("Sales Performance"):
     )
 
     # Display in Streamlit
-    st.plotly_chart(fig_sales_cycle, use_container_width=True)
+    st.plotly_chart(fig_sales_cycle, use_container_width=True, key="sales_cycle")
 
     st.markdown("**Pipeline Breakdown by Region & Segment**")
     stacked_bar_data = (
@@ -183,7 +183,7 @@ with st.expander("Sales Performance"):
     # Remove the "Region=" prefix from facet annotations
     for annotation in fig_stacked.layout.annotations:
         annotation.text = annotation.text.split("=")[-1]
-    st.plotly_chart(fig_stacked, use_container_width=True)
+    st.plotly_chart(fig_stacked, use_container_width=True, key="pipeline_breakdown")
     
     st.markdown("**Win Rate Heatmap by Region & Segment**")
     total_deals = df.groupby(["Region", "Segment"])["Opportunity_ID"].count()
@@ -210,7 +210,7 @@ with st.expander("Sales Performance"):
         yaxis_title="",
         coloraxis_colorbar=dict(title="Win Rate (%)")
     )
-    st.plotly_chart(fig_heatmap, use_container_width=True)
+    st.plotly_chart(fig_heatmap, use_container_width=True, key="win_rate_heatmap"))
 # --------------------------------------------------
 # Customer Acquisition & Retention: CAC, CLTV, churn rates
 # --------------------------------------------------
@@ -229,7 +229,7 @@ with st.expander("Customer Acquisition & Retention"):
         title="Customer Counts by Region",
         labels={"Total_Customers": "Total Customers"}
     )
-    st.plotly_chart(fig_customers, use_container_width=True)
+    st.plotly_chart(fig_customers, use_container_width=Truekey="customer_counts")
     st.info("CAC, CLTV, and churn rate visualizations are not available in the current dataset.")
 
 # --------------------------------------------------
@@ -251,7 +251,7 @@ with st.expander("Marketing Performance"):
         title="Monthly Lead Volume by Campaign Type",
         labels={"Total_Leads": "Total Leads", "Lead_Creation_Month": "Month"}
     )
-    st.plotly_chart(fig_monthly, use_container_width=True)
+    st.plotly_chart(fig_monthly, use_container_width=True, key="monthly_leads")
 
     st.markdown("**Opportunities Generated Over Time**")
     # Flag conversion if not already defined
@@ -272,7 +272,7 @@ with st.expander("Marketing Performance"):
         title="Opportunities Generated Over Time",
         labels={"Opportunities_Generated": "Opportunities Generated", "Opportunity_Creation_Month": "Month"}
     )
-    st.plotly_chart(fig_opp, use_container_width=True)
+    st.plotly_chart(fig_opp, use_container_width=True, key="opportunities_generated")
 
     st.markdown("**Conversion Rate by Campaign Type & Segment**")
     conv_seg = campaign_type.groupby(["Segment", "Campaign_Type"]).agg(
@@ -289,7 +289,7 @@ with st.expander("Marketing Performance"):
         title="Conversion Rate by Campaign Type & Segment",
         labels={"Conversion_Rate": "Conversion Rate (%)", "Segment": "Segment", "Campaign_Type": "Campaign Type"}
     )
-    st.plotly_chart(fig_conv, use_container_width=True)
+    st.plotly_chart(fig_conv, use_container_width=True, key="conversion_rate")
 
     st.markdown("**Lead Distribution by Segment & Source**")
     lead_seg = lead_df.groupby(["Segment", "Lead_Source"]).agg(
@@ -304,7 +304,7 @@ with st.expander("Marketing Performance"):
         title="Lead Distribution by Segment & Source",
         labels={"Total_Leads": "Total Leads", "Segment": "Segment", "Lead_Source": "Lead Source"}
     )
-    st.plotly_chart(fig_lead, use_container_width=True)
+    st.plotly_chart(fig_lead, use_container_width=True, key="lead_distribution")
 
     st.markdown("**Lead Conversion Rate Heatmap by Region & Segment**")
     conv_region = campaign_type.groupby(["Region", "Segment"]).agg(
@@ -319,7 +319,7 @@ with st.expander("Marketing Performance"):
         title="Lead Conversion Rate by Region & Segment",
         color_continuous_scale="Blues"
     )
-    st.plotly_chart(fig_heat_conv, use_container_width=True)
+    st.plotly_chart(fig_heat_conv, use_container_width=True, key="conversion_heatmap")
 
 # --------------------------------------------------
 # Customer Success: NPS scores, expansion revenue (placeholder)
