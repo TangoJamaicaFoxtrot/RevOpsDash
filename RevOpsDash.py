@@ -132,17 +132,24 @@ with st.expander("Sales Performance"):
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
     st.markdown("**Sales Cycle Distribution by Region**")
-    plt.figure(figsize=(10, 5))
-    sns.boxplot(
-        x=df[df["Deal_Stage"] == "Closed Won"]["Region"],
-        y=df[df["Deal_Stage"] == "Closed Won"]["Sales_Cycle_Days"],
-        palette="coolwarm"
-    )
-    plt.xlabel("Region")
-    plt.ylabel("Sales Cycle Duration (Days)")
-    plt.title("Distribution of Sales Cycle by Region")
-    st.pyplot(plt.gcf())
-    plt.clf()
+
+# Ensure Sales Cycle Days is numeric
+revops_df["Sales_Cycle_Days"] = pd.to_numeric(revops_df["Sales_Cycle_Days"], errors="coerce")
+
+# Create a Plotly box plot
+fig_sales_cycle = px.box(
+    revops_df[revops_df["Deal_Stage"] == "Closed Won"],
+    x="Region",
+    y="Sales_Cycle_Days",
+    color="Region",
+    title="Distribution of Sales Cycle by Region",
+    labels={"Sales_Cycle_Days": "Sales Cycle Duration (Days)", "Region": "Region"},
+    points="all"  # Show all data points (outliers included)
+)
+
+# Display the updated chart
+st.plotly_chart(fig_sales_cycle, use_container_width=True)
+
 
     st.markdown("**Pipeline Breakdown by Region & Segment**")
     stacked_bar_data = (
@@ -158,7 +165,6 @@ with st.expander("Sales Performance"):
         color="Segment",
         barmode="stack",
         facet_col="Region",
-        title="Pipeline Breakdown by Region & Segment",
         labels={"Deal_Stage": "Pipeline Stage", "Deal Count": "Total Deals", "Segment": "Customer Segment"}
     )
     # Remove the "Region=" prefix from facet annotations
