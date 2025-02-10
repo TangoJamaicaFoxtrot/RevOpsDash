@@ -398,7 +398,7 @@ fig_opportunity_trend = px.line(
     opportunity_trend,
     x="Opportunity_Creation_Month",
     y="Opportunities_Generated",
-    title="Opportunities Generated Over Time",
+    title="Marketing Sourced Opportunities Generated Over Time",
     labels={"Opportunities_Generated": "Opportunities Generated", "Opportunity_Creation_Month": "Month"}
 )
 st.plotly_chart(fig_opportunity_trend, use_container_width=True)
