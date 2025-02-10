@@ -132,18 +132,37 @@ with st.expander("Sales Performance"):
     )
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
+   # --------------------------------------------------
+# Sales Performance: Pipeline analysis, win rates, sales cycle
+# --------------------------------------------------
+with st.expander("Sales Performance"):
     st.markdown("**Sales Cycle Distribution by Region**")
-    plt.figure(figsize=(10, 5))
-    sns.boxplot(
-        x=df[df["Deal_Stage"] == "Closed Won"]["Region"],
-        y=df[df["Deal_Stage"] == "Closed Won"]["Sales_Cycle_Days"],
-        palette="coolwarm"
+
+    # Ensure Sales Cycle Days column is numeric
+    df["Sales_Cycle_Days"] = pd.to_numeric(df["Sales_Cycle_Days"], errors="coerce")
+
+    # Create a Plotly Box Plot
+    fig_sales_cycle = px.box(
+        df[df["Deal_Stage"] == "Closed Won"], 
+        x="Region",
+        y="Sales_Cycle_Days",
+        color="Region",
+        title="Distribution of Sales Cycle Length by Region",
+        labels={"Sales_Cycle_Days": "Sales Cycle Duration (Days)", "Region": "Region"},
+        points="all"  # Show all data points (outliers included)
     )
-    plt.xlabel("Region")
-    plt.ylabel("Sales Cycle Duration (Days)")
-    plt.title("Distribution of Sales Cycle by Region")
-    st.pyplot(plt.gcf())
-    plt.clf()
+
+    # Improve Layout & Readability
+    fig_sales_cycle.update_layout(
+        width=1000,  # Adjust width for clarity
+        height=500,  # Adjust height
+        xaxis_title="Region",
+        yaxis_title="Sales Cycle Duration (Days)",
+        boxmode="group"
+    )
+
+    # Display in Streamlit
+    st.plotly_chart(fig_sales_cycle, use_container_width=True)
 
     st.markdown("**Pipeline Breakdown by Region & Segment**")
     stacked_bar_data = (
