@@ -65,7 +65,7 @@ with st.expander("Headline Metrics", expanded=True):
 # --------------------------------------------------
 with st.expander("Revenue Overview"):
 
-    st.markdown("**Closed Won Revenue by Region & Segment**")
+st.markdown("**Closed Won Revenue by Region & Segment**")
 
 # Aggregate revenue from closed won deals by Region and Segment
 closed_won_rev = (
