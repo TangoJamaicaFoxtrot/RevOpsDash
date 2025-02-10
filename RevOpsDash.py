@@ -229,7 +229,7 @@ with st.expander("Customer Acquisition & Retention"):
         title="Customer Counts by Region",
         labels={"Total_Customers": "Total Customers"}
     )
-    st.plotly_chart(fig_customers, use_container_width=Truekey="customer_counts")
+    st.plotly_chart(fig_customers, use_container_width=True,key="customer_counts")
     st.info("CAC, CLTV, and churn rate visualizations are not available in the current dataset.")
 
 # --------------------------------------------------
