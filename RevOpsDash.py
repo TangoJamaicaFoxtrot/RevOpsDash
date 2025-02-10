@@ -12,7 +12,7 @@ st.set_page_config(page_title="Revenue Operations Dashboard", layout="wide")
 ##########################################
 @st.cache_data
 def load_data():
-    conn = sqlite3.connect("/mnt/data/revops_database.db")
+    conn = sqlite3.connect("revops_database.db")
 
     opportunity_df = pd.read_sql("SELECT * FROM opportunity_data", conn)
     lead_df = pd.read_sql("SELECT * FROM lead_data", conn)
