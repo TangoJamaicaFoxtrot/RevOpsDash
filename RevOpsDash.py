@@ -163,27 +163,35 @@ with st.expander("Sales Performance"):
     # Display in Streamlit
     st.plotly_chart(fig_sales_cycle, use_container_width=True, key="sales_cycle")
 
-    st.markdown("**Pipeline Breakdown by Region & Segment**")
-    stacked_bar_data = (
-        df.groupby(["Region", "Segment", "Deal_Stage"])
-        .agg({"Opportunity_ID": "count"})
-        .reset_index()
-        .rename(columns={"Opportunity_ID": "Deal Count"})
-    )
-    fig_stacked = px.bar(
-        stacked_bar_data,
-        x="Deal_Stage",
-        y="Deal Count",
-        color="Segment",
-        barmode="stack",
-        facet_col="Region",
-        title="Pipeline Breakdown by Region & Segment",
-        labels={"Deal_Stage": "Pipeline Stage", "Deal Count": "Total Deals", "Segment": "Customer Segment"}
-    )
-    # Remove the "Region=" prefix from facet annotations
-    for annotation in fig_stacked.layout.annotations:
-        annotation.text = annotation.text.split("=")[-1]
-    st.plotly_chart(fig_stacked, use_container_width=True, key="pipeline_breakdown")
+  st.markdown("**Pipeline Breakdown by Region & Segment**")
+
+# Filter out Closed Won and Closed Lost
+filtered_df = df[~df["Deal_Stage"].isin(["Closed Won", "Closed Lost"])]
+
+stacked_bar_data = (
+    filtered_df.groupby(["Region", "Segment", "Deal_Stage"])
+    .agg({"Opportunity_ID": "count"})
+    .reset_index()
+    .rename(columns={"Opportunity_ID": "Deal Count"})
+)
+
+fig_stacked = px.bar(
+    stacked_bar_data,
+    x="Deal_Stage",
+    y="Deal Count",
+    color="Segment",
+    barmode="stack",
+    facet_col="Region",
+    title="Pipeline Breakdown by Region & Segment",
+    labels={"Deal_Stage": "Pipeline Stage", "Deal Count": "Total Deals", "Segment": "Customer Segment"}
+)
+
+# Remove the "Region=" prefix from facet annotations
+for annotation in fig_stacked.layout.annotations:
+    annotation.text = annotation.text.split("=")[-1]
+
+st.plotly_chart(fig_stacked, use_container_width=True, key="pipeline_breakdown")
+
     
     st.markdown("**Win Rate Heatmap by Region & Segment**")
     total_deals = df.groupby(["Region", "Segment"])["Opportunity_ID"].count()
