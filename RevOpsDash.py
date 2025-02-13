@@ -163,7 +163,7 @@ with st.expander("Sales Performance"):
     # Display in Streamlit
     st.plotly_chart(fig_sales_cycle, use_container_width=True, key="sales_cycle")
 
-  st.markdown("**Pipeline Breakdown by Region & Segment**")
+st.markdown("**Pipeline Breakdown by Region & Segment**")
 
 # Filter out Closed Won and Closed Lost
 filtered_df = df[~df["Deal_Stage"].isin(["Closed Won", "Closed Lost"])]
