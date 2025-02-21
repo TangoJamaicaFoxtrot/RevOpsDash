@@ -49,7 +49,18 @@ regional_closed_won_monthly = regional_closed_won_monthly.reset_index()
 # Now safely convert it to a string
 regional_closed_won_monthly["Year_Month"] = regional_closed_won_monthly["Year_Month"].astype(str)
 
+# Assume 'Closed_Date' is already a datetime column
+closed_won["Year"] = closed_won["Closed_Date"].dt.year
 
+# Step 1: Calculate ARR from renewals at the start of the year
+renewal_arr = closed_won[closed_won["Year"] < closed_won["Year"].min()]["Deal_Size (£)"].sum()
+
+# Step 2: Reset index to ensure proper column structure
+regional_closed_won_monthly = regional_closed_won_monthly.reset_index()
+
+# Step 3: Compute cumulative ARR but start with renewal ARR
+regional_closed_won_monthly = regional_closed_won_monthly.sort_values("Year_Month")
+regional_closed_won_monthly["Cumulative_ARR"] = regional_closed_won_monthly["Closed_Won_ARR"].cumsum() + renewal_arr
 ##########################################
 # 2. Pre-Calculations for Revenue Headline Metrics
 ##########################################
