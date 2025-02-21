@@ -40,17 +40,6 @@ customer_success_df = load_customer_success_data()
 st.title("Revenue Operations Dashboard")
 
 # --------------------------------------------------
-# Headline Metrics
-# --------------------------------------------------
-with st.expander("Headline Metrics", expanded=True):
-    col1, col2, col3, col4, col5 = st.columns(5)
-    col1.metric("Total Customers", f"{total_customers}")
-    col2.metric("New Customers", f"{new_customers.shape[0]}")
-    col3.metric("Renewals", f"{renewals.shape[0]}")
-    col4.metric("Churned Customers", f"{churned_customers.shape[0]}")
-    col5.metric("Overall Win Rate", f"{overall_win_rate:.2f}%")
-
-# --------------------------------------------------
 # Revenue Overview: MRR/ARR trends & revenue breakdown
 # --------------------------------------------------
 with st.expander("Revenue Overview"):
