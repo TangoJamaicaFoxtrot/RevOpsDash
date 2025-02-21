@@ -43,7 +43,10 @@ regional_closed_won_monthly = closed_won.groupby(["Year_Month", "Region"]).agg(
     Total_Closed_Won=("Opportunity_ID", "count")
 )
 
-# Convert Year_Month (Period) to string format for plotting
+# Reset index so Year_Month becomes a column
+regional_closed_won_monthly = regional_closed_won_monthly.reset_index()
+
+# Now safely convert it to a string
 regional_closed_won_monthly["Year_Month"] = regional_closed_won_monthly["Year_Month"].astype(str)
 
 
