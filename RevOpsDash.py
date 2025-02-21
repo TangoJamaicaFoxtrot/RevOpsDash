@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import plotly.express as px
+import seaborn as sns
+import sqlite3
 
 # Set page configuration and wide layout
 st.set_page_config(page_title="Revenue Operations Dashboard", layout="wide")
@@ -16,18 +19,53 @@ def load_sales_data():
     return df
 
 @st.cache_data
+def load_lead_data():
+    lead_df = pd.read_csv("revops_lead_data.csv")
+    lead_df["Region"] = lead_df["Region"].fillna("North America")
+    return lead_df
+    
+@st.cache_data
 def load_customer_success_data():
     customer_success_df = pd.read_csv("customer_success_data.csv")
     return customer_success_df
 
 df = load_sales_data()
+lead_df = load_lead_data()
 customer_success_df = load_customer_success_data()
 
+##########################################
+# 2. Pre-Calculations for Headline Metrics
+##########################################
+
+# Define New Customers, Renewals, and Churned Customers Correctly
+new_customers = df[(df["Deal_Stage"] == "Closed Won") & (df["Opportunity_Type"] == "New Customer")]
+renewals = customer_success_df[customer_success_df["Opportunity_Type"] == "Renewal"]
+churned_customers = customer_success_df[customer_success_df["Renewal_Status"] == "Churned"]
+
+total_customers = new_customers.shape[0] + renewals.shape[0] - churned_customers.shape[0]
+
+# Overall win rate calculation (still based on Sales data)
+win_loss_counts = df["Deal_Stage"].value_counts()
+overall_win_rate = (win_loss_counts.get("Closed Won", 0) /
+                    (win_loss_counts.get("Closed Won", 0) + win_loss_counts.get("Closed Lost", 0))
+                    * 100)
+
 
 ##########################################
-# 3. Revenue Headline Metrics
+# 3. Dashboard Sections
 ##########################################
 st.title("Revenue Operations Dashboard")
+
+# --------------------------------------------------
+# Headline Metrics
+# --------------------------------------------------
+with st.expander("Headline Metrics", expanded=True):
+    col1, col2, col3, col4, col5 = st.columns(5)
+    col1.metric("Total Customers", f"{total_customers}")
+    col2.metric("New Customers", f"{new_customers.shape[0]}")
+    col3.metric("Renewals", f"{renewals.shape[0]}")
+    col4.metric("Churned Customers", f"{churned_customers.shape[0]}")
+    col5.metric("Overall Win Rate", f"{overall_win_rate:.2f}%")
 
 # --------------------------------------------------
 # Revenue Overview: MRR/ARR trends & revenue breakdown
