@@ -29,13 +29,6 @@ customer_success_df = load_customer_success_data()
 ##########################################
 st.title("Revenue Operations Dashboard")
 
-with st.expander("Revenue Headline Metrics", expanded=True):
-    col1, col2, col3, col4, col5 = st.columns(5)
-    col1.metric("Total Revenue (ARR)", f"£{total_revenue:,.2f}")
-    col2.metric("Net Revenue Retention (NRR)", f"{nrr:.2f}%")
-    col3.metric("Gross Revenue Retention (GRR)", f"{grr:.2f}%")
-    col4.metric("Churn Rate", f"{churn_rate:.2f}%")
-    col5.metric("Expansion Revenue %", f"{expansion_revenue_pct:.2f}%")
 # --------------------------------------------------
 # Revenue Overview: MRR/ARR trends & revenue breakdown
 # --------------------------------------------------
