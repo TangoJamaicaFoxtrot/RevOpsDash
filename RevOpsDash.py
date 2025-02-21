@@ -33,23 +33,6 @@ df = load_sales_data()
 lead_df = load_lead_data()
 customer_success_df = load_customer_success_data()
 
-##########################################
-# 2. Pre-Calculations for Headline Metrics
-##########################################
-
-# Define New Customers, Renewals, and Churned Customers Correctly
-new_customers = df[(df["Deal_Stage"] == "Closed Won") & (df["Opportunity_Type"] == "New Customer")]
-renewals = customer_success_df[customer_success_df["Opportunity_Type"] == "Renewal"]
-churned_customers = customer_success_df[customer_success_df["Renewal_Status"] == "Churned"]
-
-total_customers = new_customers.shape[0] + renewals.shape[0] - churned_customers.shape[0]
-
-# Overall win rate calculation (still based on Sales data)
-win_loss_counts = df["Deal_Stage"].value_counts()
-overall_win_rate = (win_loss_counts.get("Closed Won", 0) /
-                    (win_loss_counts.get("Closed Won", 0) + win_loss_counts.get("Closed Lost", 0))
-                    * 100)
-
 
 ##########################################
 # 3. Dashboard Sections
