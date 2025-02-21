@@ -43,6 +43,10 @@ regional_closed_won_monthly = closed_won.groupby(["Year_Month", "Region"]).agg(
     Total_Closed_Won=("Opportunity_ID", "count")
 )
 
+# Convert Year_Month (Period) to string format for plotting
+regional_closed_won_monthly["Year_Month"] = regional_closed_won_monthly["Year_Month"].astype(str)
+
+
 ##########################################
 # 2. Pre-Calculations for Revenue Headline Metrics
 ##########################################
