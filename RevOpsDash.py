@@ -29,7 +29,7 @@ customer_success_df = load_customer_success_data()
 
 # Define New Customers, Renewals, and Churned Customers
 new_customers = df[(df["Deal_Stage"] == "Closed Won") & (df["Opportunity_Type"] == "New Customer")]
-renewals = customer_success_df[customer_success_df["Opportunity_Type"] == "Renewal"]
+renewals = df[df["Opportunity_Type"] == "Renewal"]
 churned_customers = customer_success_df[customer_success_df["Renewal_Status"] == "Churned"]
 
 total_customers = new_customers.shape[0] + renewals.shape[0] - churned_customers.shape[0]
