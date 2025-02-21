@@ -33,6 +33,16 @@ df = load_sales_data()
 lead_df = load_lead_data()
 customer_success_df = load_customer_success_data()
 
+closed_won = df[df["Deal_Stage"] == "Closed Won"]
+closed_won["Closed_Date"] = pd.to_datetime(closed_won["Closed_Date"], format="ISO8601", errors="coerce")
+closed_won["Year_Month"] = closed_won["Closed_Date"].dt.to_period("M")
+
+regional_closed_won_monthly = closed_won.groupby(["Year_Month", "Region"]).agg(
+    Closed_Won_ARR=("Deal_Size (£)", "sum"),
+    Avg_Sales_Cycle=("Sales_Cycle_Days", "mean"),
+    Total_Closed_Won=("Opportunity_ID", "count")
+)
+
 ##########################################
 # 2. Pre-Calculations for Revenue Headline Metrics
 ##########################################
@@ -73,20 +83,34 @@ with st.expander("Revenue Overview"):
     )
     st.plotly_chart(fig, use_container_width=True)
 
-    # If your data contains a closed date and ARR/MRR column, you can show a trend.
-    if "Closed_Date" in df.columns:
-        df_trend = df[df["Deal_Stage"] == "Closed Won"].dropna(subset=["Closed_Date"]).copy()
-        df_trend["Closed_Date"] = pd.to_datetime(df_trend["Closed_Date"], errors="coerce")
-        df_trend["Month"] = df_trend["Closed_Date"].dt.to_period("M").dt.to_timestamp()
-        revenue_trend = df_trend.groupby("Month").agg(Total_ARR=("Deal_Size (£)", "sum")).reset_index()
-        fig_trend = px.line(
-            revenue_trend, x="Month", y="Total_ARR", markers=True,
-            title="ARR Trend Over Time",
-            labels={"Total_ARR": "Total ARR (£)", "Month": "Month"}
-        )
-        st.plotly_chart(fig_trend, use_container_width=True)
-    else:
-        st.info("ARR/MRR trend data not available.")
+# Reset index so Year_Month becomes a column
+regional_closed_won_monthly = regional_closed_won_monthly.reset_index()
+
+# Sort by Year_Month to ensure proper cumulative sum
+regional_closed_won_monthly = regional_closed_won_monthly.sort_values("Year_Month")
+
+# Compute cumulative ARR per region
+regional_closed_won_monthly["Cumulative_ARR"] = (
+    regional_closed_won_monthly.groupby("Region")["Closed_Won_ARR"].cumsum()
+)
+
+# Plotly Line Chart for Cumulative ARR
+fig = px.line(
+    regional_closed_won_monthly,
+    x="Year_Month",
+    y="Cumulative_ARR",
+    color="Region",
+    title="Cumulative ARR Over Time by Region",
+    labels={"Cumulative_ARR": "Cumulative ARR (£)", "Year_Month": "Month"},
+    markers=True
+)
+
+# Format x-axis for clarity
+fig.update_xaxes(type="category", title="Month")
+fig.update_yaxes(title="Cumulative ARR (£)", tickformat=",.0f")  # Format as whole numbers
+
+# Display in Streamlit
+st.plotly_chart(fig)
 
    # --------------------------------------------------
 # Sales Performance: Pipeline analysis, win rates, sales cycle
