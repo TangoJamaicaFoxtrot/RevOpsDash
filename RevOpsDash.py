@@ -23,44 +23,6 @@ def load_customer_success_data():
 df = load_sales_data()
 customer_success_df = load_customer_success_data()
 
-##########################################
-# 2. Pre-Calculations for Revenue Headline Metrics
-##########################################
-
-# Define New Customers, Renewals, and Churned Customers
-new_customers = df[(df["Deal_Stage"] == "Closed Won") & (df["Opportunity_Type"] == "New Customer")]
-renewals = df[(df["Deal_Stage"] == "Closed Won") & (df["Opportunity_Type"] == "Renewal")]
-churned_customers = customer_success_df[customer_success_df["Renewal_Status"] == "Churned"]
-
-total_customers = new_customers.shape[0] + renewals.shape[0] - churned_customers.shape[0]
-
-# Total Revenue Calculation
-total_revenue = df[df["Deal_Stage"] == "Closed Won"]["Deal_Size (£)"].sum()
-
-# Net Revenue Retention (NRR) %
-nrr = ((renewals["Expansion_Revenue (£)"].sum() + renewals["Deal_Size (£)"].sum()) / renewals["Deal_Size (£)"].sum()) * 100
-
-# Gross Revenue Retention (GRR) %
-grr = (renewals["Deal_Size (£)"].sum() / (renewals["Deal_Size (£)"].sum() + churned_customers["Churned_Revenue (£)"].sum())) * 100
-
-# Churn Rate %
-churn_rate = (churned_customers.shape[0] / (renewals.shape[0] + churned_customers.shape[0])) * 100
-
-# Expansion Revenue %
-expansion_revenue_pct = (renewals["Expansion_Revenue (£)"].sum() / total_revenue) * 100
-
-##########################################
-# 3. Revenue Headline Metrics
-##########################################
-st.title("Revenue Operations Dashboard")
-
-with st.expander("Revenue Headline Metrics", expanded=True):
-    col1, col2, col3, col4, col5 = st.columns(5)
-    col1.metric("Total Revenue (ARR)", f"£{total_revenue:,.2f}")
-    col2.metric("Net Revenue Retention (NRR)", f"{nrr:.2f}%")
-    col3.metric("Gross Revenue Retention (GRR)", f"{grr:.2f}%")
-    col4.metric("Churn Rate", f"{churn_rate:.2f}%")
-    col5.metric("Expansion Revenue %", f"{expansion_revenue_pct:.2f}%")
 
 ##########################################
 # 3. Revenue Headline Metrics
