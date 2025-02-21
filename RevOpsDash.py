@@ -33,6 +33,16 @@ df = load_sales_data()
 lead_df = load_lead_data()
 customer_success_df = load_customer_success_data()
 
+##########################################
+# 2. Pre-Calculations for Revenue Headline Metrics
+##########################################
+
+# Define New Customers, Renewals, and Churned Customers
+new_customers = df[(df["Deal_Stage"] == "Closed Won") & (df["Opportunity_Type"] == "New Customer")]
+renewals = df[(df["Deal_Stage"] == "Closed Won") & (df["Opportunity_Type"] == "Renewal")]
+churned_customers = customer_success_df[customer_success_df["Renewal_Status"] == "Churned"]
+
+total_customers = new_customers.shape[0] + renewals.shape[0] - churned_customers.shape[0]
 
 ##########################################
 # 3. Dashboard Sections
