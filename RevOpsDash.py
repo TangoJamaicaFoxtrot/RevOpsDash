@@ -1,10 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import plotly.express as px
-import seaborn as sns
-import sqlite3
 
 # Set page configuration and wide layout
 st.set_page_config(page_title="Revenue Operations Dashboard", layout="wide")
@@ -19,54 +16,51 @@ def load_sales_data():
     return df
 
 @st.cache_data
-def load_lead_data():
-    lead_df = pd.read_csv("revops_lead_data.csv")
-    lead_df["Region"] = lead_df["Region"].fillna("North America")
-    return lead_df
-    
-@st.cache_data
 def load_customer_success_data():
     customer_success_df = pd.read_csv("customer_success_data.csv")
     return customer_success_df
 
 df = load_sales_data()
-lead_df = load_lead_data()
 customer_success_df = load_customer_success_data()
 
 ##########################################
-# 2. Pre-Calculations for Headline Metrics
+# 2. Pre-Calculations for Revenue Headline Metrics
 ##########################################
 
-# Define New Customers, Renewals, and Churned Customers Correctly
+# Define New Customers, Renewals, and Churned Customers
 new_customers = df[(df["Deal_Stage"] == "Closed Won") & (df["Opportunity_Type"] == "New Customer")]
 renewals = customer_success_df[customer_success_df["Opportunity_Type"] == "Renewal"]
 churned_customers = customer_success_df[customer_success_df["Renewal_Status"] == "Churned"]
 
 total_customers = new_customers.shape[0] + renewals.shape[0] - churned_customers.shape[0]
 
-# Overall win rate calculation (still based on Sales data)
-win_loss_counts = df["Deal_Stage"].value_counts()
-overall_win_rate = (win_loss_counts.get("Closed Won", 0) /
-                    (win_loss_counts.get("Closed Won", 0) + win_loss_counts.get("Closed Lost", 0))
-                    * 100)
+# Total Revenue Calculation
+total_revenue = df[df["Deal_Stage"] == "Closed Won"]["Deal_Size (£)"].sum()
 
+# Net Revenue Retention (NRR) %
+nrr = ((renewals["Expansion_Revenue (£)"].sum() + renewals["Deal_Size (£)"].sum()) / renewals["Deal_Size (£)"].sum()) * 100
+
+# Gross Revenue Retention (GRR) %
+grr = (renewals["Deal_Size (£)"].sum() / (renewals["Deal_Size (£)"].sum() + churned_customers["Deal_Size (£)"].sum())) * 100
+
+# Churn Rate %
+churn_rate = (churned_customers.shape[0] / (renewals.shape[0] + churned_customers.shape[0])) * 100
+
+# Expansion Revenue %
+expansion_revenue_pct = (renewals["Expansion_Revenue (£)"].sum() / total_revenue) * 100
 
 ##########################################
-# 3. Dashboard Sections
+# 3. Revenue Headline Metrics
 ##########################################
 st.title("Revenue Operations Dashboard")
 
-# --------------------------------------------------
-# Headline Metrics
-# --------------------------------------------------
-with st.expander("Headline Metrics", expanded=True):
+with st.expander("Revenue Headline Metrics", expanded=True):
     col1, col2, col3, col4, col5 = st.columns(5)
-    col1.metric("Total Customers", f"{total_customers}")
-    col2.metric("New Customers", f"{new_customers.shape[0]}")
-    col3.metric("Renewals", f"{renewals.shape[0]}")
-    col4.metric("Churned Customers", f"{churned_customers.shape[0]}")
-    col5.metric("Overall Win Rate", f"{overall_win_rate:.2f}%")
-
+    col1.metric("Total Revenue (ARR)", f"£{total_revenue:,.2f}")
+    col2.metric("Net Revenue Retention (NRR)", f"{nrr:.2f}%")
+    col3.metric("Gross Revenue Retention (GRR)", f"{grr:.2f}%")
+    col4.metric("Churn Rate", f"{churn_rate:.2f}%")
+    col5.metric("Expansion Revenue %", f"{expansion_revenue_pct:.2f}%")
 # --------------------------------------------------
 # Revenue Overview: MRR/ARR trends & revenue breakdown
 # --------------------------------------------------
