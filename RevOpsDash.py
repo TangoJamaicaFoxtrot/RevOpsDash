@@ -176,6 +176,25 @@ with st.expander("Sales Performance"):
         annotation.text = annotation.text.split("=")[-1]
 
     st.plotly_chart(fig_stacked, use_container_width=True, key="pipeline_breakdown")
+    fig = px.bar(
+    regional_closed_won_monthly,
+    x="Year_Month",
+    y="Closed_Won_ARR",
+    color="Region",
+    title="New ARR Per Month by Region",
+    labels={"Closed_Won_ARR": "New ARR (£)", "Year_Month": "Month"},
+    barmode="group",  # Grouped bars for comparison
+    height=500,
+)
+
+# Format x-axis for clarity
+fig.update_xaxes(type="category", title="Month")
+
+# Format y-axis to show currency properly
+fig.update_yaxes(title="New ARR (£)", tickformat=",.0f")
+
+# Display chart in Streamlit
+st.plotly_chart(fig)
 
     total_deals = df.groupby(["Region", "Segment"])["Opportunity_ID"].count()
     closed_won  = df[df["Deal_Stage"] == "Closed Won"].groupby(["Region", "Segment"])["Opportunity_ID"].count()
