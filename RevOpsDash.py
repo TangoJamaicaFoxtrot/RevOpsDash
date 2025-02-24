@@ -203,25 +203,25 @@ win_rate_df.columns = ["Region", "Segment", "Win Rate (%)"]
 win_rate_df["Win Rate (%)"] = win_rate_df["Win Rate (%)"].round(2)
 heatmap_data = win_rate_df.pivot(index="Segment", columns="Region", values="Win Rate (%)").astype(float)
 
-    fig_heatmap = px.imshow(    
-        heatmap_data,
-        color_continuous_scale="Blues",
-        title="Win Rate Heatmap by Region & Segment",
-        labels={"color": "Win Rate (%)"}
+fig_heatmap = px.imshow(    
+    heatmap_data,
+    color_continuous_scale="Blues",
+    title="Win Rate Heatmap by Region & Segment",
+    labels={"color": "Win Rate (%)"}
     )
-    fig_heatmap.update_traces(
-        text=heatmap_data.applymap(lambda x: f"{x:.2f}"),
-        texttemplate="%{text}"
+fig_heatmap.update_traces(
+    text=heatmap_data.applymap(lambda x: f"{x:.2f}"),
+    texttemplate="%{text}"
     )
-    fig_heatmap.update_layout(
-        width=1000,
-        height=500,
-        margin=dict(l=50, r=50, t=50, b=50),
-        xaxis_title="",
-        yaxis_title="",
-        coloraxis_colorbar=dict(title="Win Rate (%)")
+fig_heatmap.update_layout(
+    width=1000,
+    height=500,
+    margin=dict(l=50, r=50, t=50, b=50),
+    xaxis_title="",
+    yaxis_title="",
+    coloraxis_colorbar=dict(title="Win Rate (%)")
     )
-    st.plotly_chart(fig_heatmap, use_container_width=True)
+st.plotly_chart(fig_heatmap, use_container_width=True)
 # --------------------------------------------------
 # Marketing Performance: Campaign performance, MQL/SQL conversion
 # --------------------------------------------------
