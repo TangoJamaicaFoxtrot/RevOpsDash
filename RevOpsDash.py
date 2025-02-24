@@ -202,7 +202,7 @@ st.plotly_chart(fig)
     win_rate_df.columns = ["Region", "Segment", "Win Rate (%)"]
     win_rate_df["Win Rate (%)"] = win_rate_df["Win Rate (%)"].round(2)
     heatmap_data = win_rate_df.pivot(index="Segment", columns="Region", values="Win Rate (%)").astype(float)
-    fig_heatmap = px.imshow(
+    fig_heatmap = px.imshow(    
         heatmap_data,
         color_continuous_scale="Blues",
         title="Win Rate Heatmap by Region & Segment",
