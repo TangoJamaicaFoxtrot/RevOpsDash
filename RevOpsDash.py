@@ -196,12 +196,13 @@ fig.update_yaxes(title="New ARR (£)", tickformat=",.0f")
 # Display chart in Streamlit
 st.plotly_chart(fig)
 
-    total_deals = df.groupby(["Region", "Segment"])["Opportunity_ID"].count()
-    closed_won  = df[df["Deal_Stage"] == "Closed Won"].groupby(["Region", "Segment"])["Opportunity_ID"].count()
-    win_rate_df = (closed_won / total_deals * 100).fillna(0).reset_index()
-    win_rate_df.columns = ["Region", "Segment", "Win Rate (%)"]
-    win_rate_df["Win Rate (%)"] = win_rate_df["Win Rate (%)"].round(2)
-    heatmap_data = win_rate_df.pivot(index="Segment", columns="Region", values="Win Rate (%)").astype(float)
+total_deals = df.groupby(["Region", "Segment"])["Opportunity_ID"].count()
+closed_won  = df[df["Deal_Stage"] == "Closed Won"].groupby(["Region", "Segment"])["Opportunity_ID"].count()
+win_rate_df = (closed_won / total_deals * 100).fillna(0).reset_index()
+win_rate_df.columns = ["Region", "Segment", "Win Rate (%)"]
+win_rate_df["Win Rate (%)"] = win_rate_df["Win Rate (%)"].round(2)
+heatmap_data = win_rate_df.pivot(index="Segment", columns="Region", values="Win Rate (%)").astype(float)
+
     fig_heatmap = px.imshow(    
         heatmap_data,
         color_continuous_scale="Blues",
